@@ -23,7 +23,7 @@
     },
     "emulators": [
         {
-            "name": "NGP.EMU",
+            "name": "Standalone NGP.EMU",
             "unique_id": "ngp.com.explusalpha.NgpEmu",
             "description": "Supported extensions: zip, ngp, ngc, 7z.",
             "is_retroachievements_compatible": false,

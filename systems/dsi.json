@@ -151,7 +151,7 @@
             }
         },
         {
-            "name": "Drastic",
+            "name": "Standalone Drastic",
             "unique_id": "dsi.standalone.drastic",
             "is_retroachievements_compatible": false,
             "description": "Premium Nintendo DS emulator for Android.",
@@ -162,7 +162,7 @@
             }
         },
         {
-            "name": "MelonDS",
+            "name": "Standalone MelonDS",
             "unique_id": "dsi.standalone.melonds",
             "is_retroachievements_compatible": false,
             "description": "Free and open-source Nintendo DS emulator.",
@@ -185,7 +185,7 @@
             }
         },
         {
-            "name": "MelonDS Nightly",
+            "name": "Standalone MelonDS Nightly",
             "unique_id": "dsi.standalone.melonds.nightly",
             "is_retroachievements_compatible": false,
             "description": "MelonDS Nightly build.",
@@ -196,7 +196,7 @@
             }
         },
         {
-            "name": "MelonDS Dev",
+            "name": "Standalone MelonDS Dev",
             "unique_id": "dsi.standalone.melonds.dev",
             "is_retroachievements_compatible": false,
             "description": "MelonDS Dev (Dual Screen Fork).",
@@ -207,7 +207,7 @@
             }
         },
         {
-            "name": "NooDS",
+            "name": "Standalone NooDS",
             "unique_id": "dsi.standalone.noods",
             "is_retroachievements_compatible": false,
             "description": "NooDS Emulator.",

@@ -25,7 +25,7 @@
     },
     "emulators": [
         {
-            "name": "Skyline",
+            "name": "Standalone Skyline",
             "unique_id": "switch.skyline.emu",
             "description": "Supported extensions: nro, nso, nca, xci, nsp.",
             "is_retroachievements_compatible": false,
@@ -36,7 +36,7 @@
             }
         },
         {
-            "name": "Strato (Official)",
+            "name": "Standalone Strato",
             "unique_id": "switch.org.stratoemu.strato",
             "description": "Supported extensions: nro, nso, nca, xci, nsp.",
             "is_retroachievements_compatible": false,
@@ -47,7 +47,7 @@
             }
         },
         {
-            "name": "Eden",
+            "name": "Standalone Eden",
             "default": true,
             "unique_id": "switch.dev.eden.eden_emulator",
             "description": "Supported extensions: nro, nso, nca, xci, nsp.",
@@ -71,7 +71,7 @@
             }
         },
         {
-            "name": "Eden (Optimized)",
+            "name": "Standalone Eden (Optimized)",
             "unique_id": "switch.com.miHoYo.Yuanshen.eden",
             "description": "Supported extensions: nro, nso, nca, xci, nsp.",
             "is_retroachievements_compatible": false,
@@ -82,7 +82,7 @@
             }
         },
         {
-            "name": "Eden (Legacy)",
+            "name": "Standalone Eden (Legacy)",
             "unique_id": "switch.dev.legacy.eden_emulator",
             "description": "Supported extensions: nro, nso, nca, xci, nsp.",
             "is_retroachievements_compatible": false,
@@ -93,7 +93,7 @@
             }
         },
         {
-            "name": "Eden (Nightly)",
+            "name": "Standalone Eden (Nightly)",
             "unique_id": "switch.dev.eden.eden_nightly",
             "description": "Supported extensions: nro, nso, nca, xci, nsp.",
             "is_retroachievements_compatible": false,
@@ -104,7 +104,7 @@
             }
         },
         {
-            "name": "Yuzu",
+            "name": "Standalone Yuzu",
             "unique_id": "switch.org.yuzu.yuzu_emu",
             "description": "Supported extensions: nro, nso, nca, xci, nsp.",
             "is_retroachievements_compatible": false,
@@ -127,7 +127,7 @@
             }
         },
         {
-            "name": "Yuzu (early access)",
+            "name": "Standalone Yuzu (early access)",
             "unique_id": "switch.org.yuzu.yuzu_emu.ea",
             "description": "Supported extensions: nro, nso, nca, xci, nsp.",
             "is_retroachievements_compatible": false,
@@ -138,7 +138,7 @@
             }
         },
         {
-            "name": "Suyu",
+            "name": "Standalone Suyu",
             "unique_id": "switch.dev.suyu.suyu_emu.relWithDebInfo",
             "description": "Supported extensions: nro, nso, nca, xci, nsp.",
             "is_retroachievements_compatible": false,
@@ -149,7 +149,7 @@
             }
         },
         {
-            "name": "Sudachi (Mainline)",
+            "name": "Standalone Sudachi (Mainline)",
             "unique_id": "switch.org.sudachi.sudachi_emu",
             "description": "Supported extensions: nro, nso, nca, xci, nsp.",
             "is_retroachievements_compatible": false,
@@ -160,7 +160,7 @@
             }
         },
         {
-            "name": "Sudachi (Early Access)",
+            "name": "Standalone Sudachi (Early Access)",
             "unique_id": "switch.org.sudachi.sudachi_emu.ea",
             "description": "Supported extensions: nro, nso, nca, xci, nsp.",
             "is_retroachievements_compatible": false,
@@ -171,7 +171,7 @@
             }
         },
         {
-            "name": "Citron",
+            "name": "Standalone Citron",
             "unique_id": "switch.org.citron.citron_emu",
             "description": "Supported extensions: nro, nso, nca, xci, nsp.",
             "is_retroachievements_compatible": false,
@@ -194,7 +194,7 @@
             }
         },
         {
-            "name": "Kenji-NX",
+            "name": "Standalone Kenji-NX",
             "unique_id": "switch.org.kenjinx.android",
             "description": "Supported extensions: nro, nso, nca, xci, nsp.",
             "is_retroachievements_compatible": false,
@@ -205,7 +205,7 @@
             }
         },
         {
-            "name": "Benji-SC",
+            "name": "Standalone Benji-SC",
             "unique_id": "switch.org.benjisc.android",
             "description": "Supported extensions: nro, nso, nca, xci, nsp.",
             "is_retroachievements_compatible": false,

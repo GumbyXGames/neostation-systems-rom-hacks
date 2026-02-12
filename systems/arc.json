@@ -385,7 +385,7 @@
             }
         },
         {
-            "name": "MAME4droid",
+            "name": "Standalone MAME4droid",
             "unique_id": "arc.com.seleuco.mame4droid",
             "description": "Supported extensions: 7z, chd, cmd, zip.",
             "is_retroachievements_compatible": false,
@@ -396,7 +396,7 @@
             }
         },
         {
-            "name": "MAME4droid 2024",
+            "name": "StandaloneMAME4droid 2024",
             "unique_id": "arc.com.seleuco.mame4d2024",
             "description": "Supported extensions: 7z, chd, cmd, zip.",
             "is_retroachievements_compatible": false,

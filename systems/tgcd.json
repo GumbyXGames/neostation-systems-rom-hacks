@@ -29,7 +29,7 @@
     },
     "emulators": [
         {
-            "name": "PCE.emu",
+            "name": "Standalone PCE.emu",
             "unique_id": "tgcd.com.PceEmu",
             "description": "Support extensions: ccd, chd, cue, m3u, pce, sgx, toc.",
             "is_retroachievements_compatible": false,

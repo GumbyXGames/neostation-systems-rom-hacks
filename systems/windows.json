@@ -1,0 +1,111 @@
+{
+    "system": {
+        "id": "windows",
+        "name": "Microsoft Windows",
+        "details": {
+            "manufacturer": "Microsoft",
+            "release_date": "1985-11-20",
+            "description": "Microsoft Windows is a group of several proprietary graphical operating system families, all of which are developed and marketed by Microsoft."
+        },
+        "ids": {
+            "screenscraper": 1,
+            "retroachievements": null
+        },
+        "folders": [
+            "windows",
+            "pc",
+            "gamehub",
+            "winlator"
+        ],
+        "extensions": [
+            "desktop",
+            "lnk",
+            "localgameid",
+            "exe",
+            "bat",
+            "cmd"
+        ]
+    },
+    "emulators": [
+        {
+            "name": "Standalone Winlator CMod",
+            "unique_id": "windows.winlator.cmod",
+            "description": "Supported extensions: desktop",
+            "platforms": {
+                "android": {
+                    "launch_arguments": "-n com.winlator.cmod/.XServerDisplayActivity -e shortcut_path \"{file.path}\" --activity-clear-task --activity-clear-top --activity-no-history"
+                }
+            }
+        },
+        {
+            "name": "Standalone Winlator CMod Proot",
+            "unique_id": "windows.winlator.cmodproot",
+            "description": "Supported extensions: desktop",
+            "platforms": {
+                "android": {
+                    "launch_arguments": "-n com.cmodded.winlator/com.winlator.XServerDisplayActivity -e shortcut_path \"{file.path}\" --activity-clear-task --activity-clear-top --activity-no-history"
+                }
+            }
+        },
+        {
+            "name": "Standalone Winlator Cmod (Old)",
+            "unique_id": "windows.winlator.cmod.old",
+            "description": "Supported extensions: desktop",
+            "platforms": {
+                "android": {
+                    "launch_arguments": "-n com.winlator/.XServerDisplayActivity -e shortcut_path \"{file.path}\" --activity-clear-task --activity-clear-top --activity-no-history"
+                }
+            }
+        },
+        {
+            "name": "Standalone MiceWine",
+            "unique_id": "windows.micewine.emu",
+            "description": "Supported extensions: lnk",
+            "platforms": {
+                "android": {
+                    "launch_arguments": "-n com.micewine.emu/com.micewine.emu.activities.MainActivity -e exePath \"{file.path}\" --activity-clear-task --activity-clear-top --activity-no-history"
+                }
+            }
+        },
+        {
+            "name": "Standalone GameHub Lite (Local Games)",
+            "unique_id": "windows.gamehub.lite.local",
+            "description": "Supported extensions: localgameid",
+            "platforms": {
+                "android": {
+                    "launch_arguments": "-a gamehub.lite.LAUNCH_GAME -n gamehub.lite/com.xj.landscape.launcher.ui.gamedetail.GameDetailActivity --es localGameId \"{tags.localgameid}\" --ez autoStartGame true"
+                }
+            }
+        },
+        {
+            "name": "Standalone GameHub Lite (Antutu)",
+            "unique_id": "windows.gamehub.lite.local.antutu",
+            "description": "Supported extensions: localgameid",
+            "platforms": {
+                "android": {
+                    "launch_arguments": "-a gamehub.lite.LAUNCH_GAME -n com.antutu.ABenchMark/com.xj.landscape.launcher.ui.gamedetail.GameDetailActivity --es localGameId \"{tags.localgameid}\" --ez autoStartGame true"
+                }
+            }
+        },
+        {
+            "name": "Standalone GameHub Lite (PUBG)",
+            "unique_id": "windows.gamehub.lite.local.pubg",
+            "description": "Supported extensions: localgameid",
+            "platforms": {
+                "android": {
+                    "launch_arguments": "-a gamehub.lite.LAUNCH_GAME -n com.tencent.ig/com.xj.landscape.launcher.ui.gamedetail.GameDetailActivity --es localGameId \"{tags.localgameid}\" --ez autoStartGame true"
+                }
+            }
+        },
+        {
+            "name": "Standalone GameHub Lite (Ludashi)",
+            "unique_id": "windows.gamehub.lite.ludashi",
+            "description": "Supported extensions: localgameid",
+            "platforms": {
+                "android": {
+                    "launch_arguments": "-a gamehub.lite.LAUNCH_GAME -n com.ludashi.aibench/com.xj.landscape.launcher.ui.gamedetail.GameDetailActivity --es localGameId \"{tags.localgameid}\" --ez autoStartGame true"
+                }
+            }
+        }
+    ]
+}

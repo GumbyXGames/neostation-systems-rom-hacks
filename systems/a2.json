@@ -76,7 +76,7 @@
       }
     },
     {
-      "name": "RAppleWin",
+      "name": "Standalone RAppleWin",
       "unique_id": "a2.rapplewin",
       "is_retroachievements_compatible": true,
       "description": "Supported extensions: bin.",

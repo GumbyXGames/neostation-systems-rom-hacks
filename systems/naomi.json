@@ -25,7 +25,7 @@
     },
     "emulators": [
         {
-            "name": "Flycast",
+            "name": "Standalone Flycast",
             "unique_id": "naomi.com.flycast.emulator",
             "description": "Supported extensions: 7z, chd, dat, lst, zip.",
             "is_retroachievements_compatible": true,

@@ -37,7 +37,7 @@
     },
     "emulators": [
         {
-            "name": "Duckstation",
+            "name": "Standalone Duckstation",
             "unique_id": "psx.com.github.stenzek.duckstation",
             "description": "Supported extensions: bin, chd, cue, ecm, exe, img, iso, m3u, mds, pbp, psexe, psf.",
             "is_retroachievements_compatible": true,
@@ -60,7 +60,7 @@
             }
         },
         {
-            "name": "FPse",
+            "name": "Standalone FPse",
             "unique_id": "psx.com.emulator.fpse",
             "description": "Supported extensions: bin, chd, cue, ecm, exe, img, iso, m3u, mds, pbp, psexe, psf.",
             "is_retroachievements_compatible": false,
@@ -71,7 +71,7 @@
             }
         },
         {
-            "name": "FPse64",
+            "name": "Standalone FPse64",
             "unique_id": "psx.com.emulator.fpse64",
             "description": "Supported extensions: bin, chd, cue, ecm, exe, img, iso, m3u, mds, pbp, psexe, psf.",
             "is_retroachievements_compatible": false,
@@ -82,7 +82,7 @@
             }
         },
         {
-            "name": "ePSXe",
+            "name": "Standalone ePSXe",
             "unique_id": "psx.com.epsxe.ePSXe",
             "description": "Supported extensions: bin, chd, cue, ecm, exe, img, iso, m3u, mds, pbp, psexe, psf.",
             "is_retroachievements_compatible": false,

@@ -142,7 +142,7 @@
       }
     },
     {
-      "name": "Azahar",
+      "name": "Standalone Azahar",
       "unique_id": "3ds.azahar",
       "is_retroachievements_compatible": false,
       "description": "Supported extensions: cci, cxi, zcci, zcxi.",

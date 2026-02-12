@@ -41,7 +41,7 @@
     },
     "emulators": [
         {
-            "name": "GG Emulator",
+            "name": "Standalone GG Emulator",
             "unique_id": "gamegear.com.androidemu.gg",
             "description": "Supported extensions: bin, bms, col, gg, rom, sg, sms.",
             "is_retroachievements_compatible": false,
@@ -52,7 +52,7 @@
             }
         },
         {
-            "name": "MasterGear",
+            "name": "Standalone MasterGear",
             "unique_id": "gamegear.com.fms.mg",
             "description": "Supported extensions: gg, sms.",
             "is_retroachievements_compatible": false,
@@ -63,7 +63,7 @@
             }
         },
         {
-            "name": "Pizza Boy SC Pro",
+            "name": "Standalone Pizza Boy SC Pro",
             "unique_id": "gamegear.it.dbtecno.pizzaboyscpro",
             "description": "Supported extensions: gg, zip",
             "is_retroachievements_compatible": false,

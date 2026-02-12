@@ -33,52 +33,30 @@
     },
     "emulators": [
         {
-            "name": "Dolphin Handheld",
+            "name": "Standalone Dolphin Handheld",
             "unique_id": "wii.org.dolphinemu.handheld",
-            "description": "Supported extensions: ciso, dff, dol, elf, gcm, gcz, iso, tgc, wad, wbfs, rvz.",
-            "is_retroachievements_compatible": false,
+            "description": "Supported extensions: ciso, dff, dol, elf, gcm, gcz, iso, tgc, wad, wbfs, rvz, m3u.",
+            "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n org.dolphinemu.handheld/org.dolphinemu.dolphinemu.ui.main.MainActivity -a android.intent.action.VIEW -d \"{file.uri}\""
+                    "launch_arguments": "-n org.dolphinemu.handheld/org.dolphinemu.dolphinemu.ui.main.MainActivity -a android.intent.action.VIEW -d \"{file.uri}\" --activity-clear-task --activity-clear-top --activity-no-history"
                 }
             }
         },
         {
-            "name": "Dolphin MJR",
+            "name": "Standalone Dolphin MMJR",
             "unique_id": "wii.org.mm.jr",
             "description": "Supported extensions: ciso, dff, dol, elf, gcm, gcz, iso, tgc, wad, wbfs, rvz.",
             "is_retroachievements_compatible": false,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n org.mm.jr/org.dolphinemu.dolphinemu.ui.main.MainActivity -a android.intent.action.VIEW -d \"{file.uri}\""
+                    "launch_arguments": "-n org.mm.jr/org.dolphinemu.dolphinemu.ui.main.MainActivity -a android.intent.action.VIEW -d \"{file.uri}\" --activity-clear-task --activity-clear-top --activity-no-history"
                 }
             }
         },
         {
-            "name": "Dolphin MMJ",
-            "unique_id": "wii.org.mm.j",
-            "description": "Supported extensions: ciso, dff, dol, elf, gcm, gcz, iso, tgc, wad, wbfs, rvz.",
-            "is_retroachievements_compatible": false,
-            "platforms": {
-                "android": {
-                    "launch_arguments": "-n org.mm.j/org.dolphinemu.dolphinemu.ui.main.MainActivity -a android.intent.action.VIEW -d \"{file.uri}\""
-                }
-            }
-        },
-        {
-            "name": "Dolphin MMJR",
+            "name": "Standalone Dolphin MMJR2",
             "unique_id": "wii.org.dolphinemu.mmjr",
-            "description": "Supported extensions: ciso, dff, dol, elf, gcm, gcz, iso, tgc, wad, wbfs, rvz.",
-            "is_retroachievements_compatible": false,
-            "platforms": {
-                "android": {
-                    "launch_arguments": "-n org.dolphinemu.mmjr/org.dolphinemu.dolphinemu.ui.main.MainActivity -a android.intent.action.VIEW -d \"{file.uri}\""
-                }
-            }
-        },
-        {
-            "name": "Dolphin MMJR2",
-            "unique_id": "wii.org.dolphinemu.mmjr2",
             "description": "Supported extensions: ciso, dff, dol, elf, gcm, gcz, iso, tgc, wad, wbfs, rvz.",
             "is_retroachievements_compatible": false,
             "platforms": {
@@ -88,13 +66,24 @@
             }
         },
         {
-            "name": "Dolphin Official",
-            "unique_id": "wii.org.dolphinemu.dolphinemu",
+            "name": "Standalone Dolphin MMJ",
+            "unique_id": "wii.org.mm.j",
             "description": "Supported extensions: ciso, dff, dol, elf, gcm, gcz, iso, tgc, wad, wbfs, rvz.",
             "is_retroachievements_compatible": false,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n org.dolphinemu.dolphinemu/.ui.main.MainActivity -a android.intent.action.VIEW -d \"{file.uri}\""
+                    "launch_arguments": "-n org.mm.j/org.dolphinemu.dolphinemu.ui.main.MainActivity -a android.intent.action.VIEW -d \"{file.uri}\" --activity-clear-task --activity-clear-top --activity-no-history"
+                }
+            }
+        },
+        {
+            "name": "Standalone Dolphin Official",
+            "unique_id": "wii.org.dolphinemu.dolphinemu",
+            "description": "Supported extensions: ciso, dff, dol, elf, gcm, gcz, iso, tgc, wad, wbfs, rvz, m3u.",
+            "is_retroachievements_compatible": true,
+            "platforms": {
+                "android": {
+                    "launch_arguments": "-n org.dolphinemu.dolphinemu/.ui.main.MainActivity -a android.intent.action.VIEW -d \"{file.uri}\" --activity-clear-task --activity-clear-top --activity-no-history"
                 },
                 "windows": {
                     "executable": "dolphin.exe",
@@ -111,35 +100,13 @@
             }
         },
         {
-            "name": "Dolphin MMJR3",
-            "unique_id": "wii.org.dolphinemu.mmjr3",
-            "description": "Supported extensions: ciso, dff, dol, elf, gcm, gcz, iso, tgc, wad, wbfs, rvz.",
-            "is_retroachievements_compatible": false,
-            "platforms": {
-                "android": {
-                    "launch_arguments": "-n org.dolphinemu.mmjr3/org.dolphinemu.dolphinemu.ui.main.MainActivity -a android.intent.action.VIEW -d \"{file.uri}\""
-                }
-            }
-        },
-        {
             "name": "Dolphin Ishiiruka",
             "unique_id": "wii.org.dolphin.ishiirukadark",
             "description": "Supported extensions: ciso, dff, dol, elf, gcm, gcz, iso, tgc, wad, wbfs, rvz.",
             "is_retroachievements_compatible": false,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n org.dolphin.ishiirukadark/org.dolphinemu.dolphinemu.ui.main.MainActivity -a android.intent.action.VIEW -d \"{file.uri}\""
-                }
-            }
-        },
-        {
-            "name": "Dolphin (Debug Build)",
-            "unique_id": "wii.org.dolphinemu.dolphinemu.debug",
-            "description": "Supported extensions: ciso, dff, dol, elf, gcm, gcz, iso, tgc, wad, wbfs, rvz.",
-            "is_retroachievements_compatible": false,
-            "platforms": {
-                "android": {
-                    "launch_arguments": "-n org.dolphinemu.dolphinemu.debug/org.dolphinemu.dolphinemu.ui.main.MainActivity -a android.intent.action.VIEW -d \"{file.uri}\""
+                    "launch_arguments": "-n org.dolphin.ishiirukadark/org.dolphinemu.dolphinemu.ui.main.MainActivity -a android.intent.action.VIEW -d \"{file.uri}\" --activity-clear-task --activity-clear-top --activity-no-history"
                 }
             }
         },

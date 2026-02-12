@@ -29,7 +29,7 @@
     },
     "emulators": [
         {
-            "name": "PCE.emu",
+            "name": "Standalone PCE.emu",
             "unique_id": "tg16.com.PceEmu",
             "description": "Support extensions: ccd, chd, cue, m3u, pce, sgx, toc.",
             "is_retroachievements_compatible": false,
@@ -91,17 +91,42 @@
             "platforms": {
                 "android": {
                     "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"mednafen_pce_fast\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg\""
+                },
+                "windows": {
+                    "executable": "retroarch.exe",
+                    "args": "-L mednafen_pce_fast_libretro.dll \"{file.path}\""
+                },
+                "linux": {
+                    "executable": "retroarch",
+                    "args": "-L mednafen_pce_fast_libretro.so \"{file.path}\""
+                },
+                "macos": {
+                    "executable": "retroarch",
+                    "args": "-L mednafen_pce_fast_libretro.dylib \"{file.path}\""
                 }
             }
         },
         {
             "name": "RetroArch Beetle PCE",
+            "default": true,
             "unique_id": "tg16.ra.mednafen_pce",
             "description": "Supported extensions: ccd, chd, cue, m3u, pce, sgx, toc, zip, 7z.",
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
                     "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"mednafen_pce\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg\""
+                },
+                "windows": {
+                    "executable": "retroarch.exe",
+                    "args": "-L mednafen_pce_libretro.dll \"{file.path}\""
+                },
+                "linux": {
+                    "executable": "retroarch",
+                    "args": "-L mednafen_pce_libretro.so \"{file.path}\""
+                },
+                "macos": {
+                    "executable": "retroarch",
+                    "args": "-L mednafen_pce_libretro.dylib \"{file.path}\""
                 }
             }
         }

@@ -30,7 +30,7 @@
     },
     "emulators": [
         {
-            "name": "IrataJaguar",
+            "name": "Standalone IrataJaguar",
             "unique_id": "jaguar.ru.vastness.altmer.iratajaguar",
             "description": "Supported extensions: j64, jag, rom, abs, cof, bin, prg, zip, 7z.",
             "is_retroachievements_compatible": false,

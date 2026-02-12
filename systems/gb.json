@@ -30,7 +30,7 @@
     },
     "emulators": [
         {
-            "name": "Pizza Boy C Basic",
+            "name": "Standalone Pizza Boy C Basic",
             "unique_id": "gb.it.dbtecno.pizzaboy",
             "description": "Supported extensions: gb, gbc, gbs.",
             "is_retroachievements_compatible": true,
@@ -41,7 +41,7 @@
             }
         },
         {
-            "name": "Pizza Boy C Pro",
+            "name": "Standalone Pizza Boy C Pro",
             "unique_id": "gb.it.dbtecno.pizzaboypro",
             "description": "Supported extensions: gb, gbc, gbs.",
             "is_retroachievements_compatible": true,
@@ -52,7 +52,7 @@
             }
         },
         {
-            "name": "SkyEmu",
+            "name": "Standalone SkyEmu",
             "unique_id": "gb.com.sky.SkyEmu",
             "description": "Supported extensions: gb, gbc.",
             "is_retroachievements_compatible": true,
@@ -63,7 +63,7 @@
             }
         },
         {
-            "name": "GBC.emu",
+            "name": "Standalone GBC.emu",
             "unique_id": "gb.com.explusalpha.GbcEmu",
             "description": "Support extensions: bin, cgb, dmg, gb, gbc, gbs, rom, sgb.",
             "is_retroachievements_compatible": false,
@@ -74,7 +74,7 @@
             }
         },
         {
-            "name": "GBC Emulator",
+            "name": "Standalone GBC Emulator",
             "unique_id": "gb.com.fastemulator.gbc",
             "description": "Support extensions: bin, cgb, dmg, gb, gbc, gbs, rom, sgb.",
             "is_retroachievements_compatible": false,
@@ -85,7 +85,7 @@
             }
         },
         {
-            "name": "Linkboy",
+            "name": "Standalone Linkboy",
             "unique_id": "gb.com.pixelrespawn.linkboy",
             "description": "Support extensions: bin, cgb, dmg, gb, gbc, gbs, rom, sgb.",
             "is_retroachievements_compatible": true,

@@ -26,7 +26,7 @@
     },
     "emulators": [
         {
-            "name": "Redream",
+            "name": "Standalone Redream",
             "unique_id": "aw.io.recompiled.redream",
             "description": "Supported extensions: 7z, bin, cdi, chd, cue, dat, elf, gdi, iso, lst, m3u, zip.",
             "is_retroachievements_compatible": false,
@@ -37,7 +37,7 @@
             }
         },
         {
-            "name": "Reicast",
+            "name": "Standalone Reicast",
             "unique_id": "aw.com.reicast.emulator",
             "description": "Supported extensions: 7z, chd, dat, lst, zip.",
             "is_retroachievements_compatible": false,
@@ -48,7 +48,7 @@
             }
         },
         {
-            "name": "Flycast",
+            "name": "Standalone Flycast",
             "unique_id": "aw.com.flycast.emulator",
             "description": "Supported extensions: 7z, chd, dat, lst, zip.",
             "is_retroachievements_compatible": true,

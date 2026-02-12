@@ -28,7 +28,7 @@
     },
     "emulators": [
         {
-            "name": "PPSSPP",
+            "name": "Standalone PPSSPP",
             "unique_id": "psp.org.ppsspp.ppsspp",
             "description": "Supported extensions: cso, chd, elf, iso, pbp, prx.",
             "is_retroachievements_compatible": true,
@@ -51,7 +51,7 @@
             }
         },
         {
-            "name": "PPSSPP Gold",
+            "name": "Standalone PPSSPP Gold",
             "unique_id": "psp.org.ppsspp.ppssppgold",
             "description": "Supported extensions: cso, chd, elf, iso, pbp, prx.",
             "is_retroachievements_compatible": true,
@@ -62,7 +62,7 @@
             }
         },
         {
-            "name": "PPSSPP Legacy",
+            "name": "Standalone PPSSPP Legacy",
             "unique_id": "psp.org.ppsspp.ppsspplegacy",
             "description": "Supported extensions: cso, chd, elf, iso, pbp, prx.",
             "is_retroachievements_compatible": true,

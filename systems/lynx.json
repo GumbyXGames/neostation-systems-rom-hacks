@@ -24,7 +24,7 @@
     },
     "emulators": [
         {
-            "name": "LynxEmu",
+            "name": "Standalone LynxEmu",
             "unique_id": "lynx.com.explusalpha.LynxEmu",
             "description": "Supported extensions: lnx, o, zip, 7z.",
             "is_retroachievements_compatible": false,

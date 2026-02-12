@@ -28,7 +28,7 @@
     },
     "emulators": [
         {
-            "name": "Mupen64Plus FZ",
+            "name": "Standalone Mupen64Plus FZ",
             "unique_id": "n64.org.mupen64plusae.v3.fzurita",
             "description": "Supported extensions: bin, n64, ndd, u1, v64, z64.",
             "is_retroachievements_compatible": false,
@@ -39,7 +39,7 @@
             }
         },
         {
-            "name": "Mupen64Plus AE",
+            "name": "Standalone Mupen64Plus AE",
             "unique_id": "n64.org.mupen64plusae.v3.alpha",
             "description": "Supported extensions: bin, n64, ndd, u1, v64, z64, zip, 7z.",
             "is_retroachievements_compatible": false,
@@ -50,7 +50,7 @@
             }
         },
         {
-            "name": "Mupen64Plus FZ Pro",
+            "name": "Standalone Mupen64Plus FZ Pro",
             "unique_id": "n64.org.mupen64plusae.v3.fzurita.pro",
             "description": "Supported extensions: bin, n64, ndd, u1, v64, z64, zip, 7z.",
             "is_retroachievements_compatible": false,
@@ -61,7 +61,7 @@
             }
         },
         {
-            "name": "Mupen64Plus",
+            "name": "Standalone Mupen64Plus",
             "unique_id": "n64.paulscode.android.mupen64plusae",
             "description": "Supported extensions: bin, n64, ndd, u1, v64, z64.",
             "is_retroachievements_compatible": false,

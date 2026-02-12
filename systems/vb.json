@@ -26,7 +26,7 @@
     },
     "emulators": [
         {
-            "name": "VVS",
+            "name": "Standalone VVS",
             "unique_id": "virtualboy.com.simongellis.vvb",
             "description": "Supported extensions: vb, zip.",
             "is_retroachievements_compatible": false,

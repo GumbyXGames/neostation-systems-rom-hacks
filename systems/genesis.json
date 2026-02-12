@@ -39,7 +39,7 @@
     },
     "emulators": [
         {
-            "name": "MD.emu",
+            "name": "Standalone MD.emu",
             "unique_id": "genesis.com.explusalpha.MdEmu",
             "description": "Support extensions: 32x, 68k, bin, bms, chd, cue, gen, gg, iso, m3u, md, mdx, pco, sg, sgd, smd, sms.",
             "is_retroachievements_compatible": false,
@@ -50,7 +50,7 @@
             }
         },
         {
-            "name": "GensPlusDroid",
+            "name": "Standalone GensPlusDroid",
             "unique_id": "genesis.com.androidemu.gens",
             "description": "Supported extensions: 32x, 68k, bin, chd, cue, gen, gg, iso, md, mdx, sg, smd, sms.",
             "is_retroachievements_compatible": false,
@@ -61,7 +61,7 @@
             }
         },
         {
-            "name": "Pizza Boy SC Pro",
+            "name": "Standalone Pizza Boy SC Pro",
             "unique_id": "genesis.it.dbtecno.pizzaboyscpro",
             "description": "Supported extensions: md, zip.",
             "is_retroachievements_compatible": true,

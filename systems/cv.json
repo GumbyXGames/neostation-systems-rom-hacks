@@ -126,8 +126,8 @@
             }
         },
         {
-            "name": "RAmeka",
-            "unique_id": "coleco.ra.ramek",
+            "name": "Standalone RAMEKA",
+            "unique_id": "coleco.ramek",
             "description": "Supported extensions: col, cv, bin, rom, zip",
             "is_retroachievements_compatible": false,
             "platforms": {

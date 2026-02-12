@@ -24,7 +24,7 @@
     },
     "emulators": [
         {
-            "name": "NEO.EMU",
+            "name": "Standalone NEO.EMU",
             "unique_id": "neogeo.com.explusalpha.NeoEmu",
             "description": "Supported extensions: zip, 7z.",
             "is_retroachievements_compatible": false,
@@ -134,7 +134,7 @@
                 },
                 "windows": {
                     "executable": "retroarch.exe",
-                    "args": "-L cores\fbneo_libretro.dll \"{file.path}\""
+                    "args": "-L fbneo_libretro.dll \"{file.path}\""
                 },
                 "linux": {
                     "executable": "retroarch",
@@ -157,7 +157,7 @@
                 },
                 "windows": {
                     "executable": "retroarch.exe",
-                    "args": "-L cores\fbalpha2012_libretro.dll \"{file.path}\""
+                    "args": "-L fbalpha2012_libretro.dll \"{file.path}\""
                 },
                 "linux": {
                     "executable": "retroarch",
@@ -180,7 +180,7 @@
                 },
                 "windows": {
                     "executable": "retroarch.exe",
-                    "args": "-L cores\fbalpha2012_neogeo_libretro.dll \"{file.path}\""
+                    "args": "-L fbalpha2012_neogeo_libretro.dll \"{file.path}\""
                 },
                 "linux": {
                     "executable": "retroarch",

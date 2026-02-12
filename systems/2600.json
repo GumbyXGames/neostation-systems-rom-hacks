@@ -138,7 +138,7 @@
       }
     },
     {
-      "name": "A2600Emu",
+      "name": "Standalone A2600Emu",
       "unique_id": "2600.com.explusalpha.A2600Emu",
       "is_retroachievements_compatible": false,
       "description": "Supported extensions: a26, bin.",
@@ -149,7 +149,7 @@
       }
     },
     {
-      "name": "Atari",
+      "name": "Standalone Atari",
       "unique_id": "2600.com.androidemu.atari",
       "is_retroachievements_compatible": false,
       "description": "Supported extensions: a26, bin.",

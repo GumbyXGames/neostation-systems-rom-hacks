@@ -42,7 +42,7 @@
     },
     "emulators": [
         {
-            "name": "Md.emu",
+            "name": "Standalone Md.emu",
             "unique_id": "sms.com.explusalpha.MdEmu",
             "description": "Support extensions: 32x, 68k, bin, bms, chd, cue, gen, gg, iso, m3u, md, mdx, pco, sg, sgd, smd, sms.",
             "is_retroachievements_compatible": false,
@@ -53,7 +53,7 @@
             }
         },
         {
-            "name": "Pizza Boy SC Pro",
+            "name": "Standalone Pizza Boy SC Pro",
             "unique_id": "sms.it.dbtecno.pizzaboyscpro",
             "description": "Supported extensions: sms, zip",
             "is_retroachievements_compatible": true,

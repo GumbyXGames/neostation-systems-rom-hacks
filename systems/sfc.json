@@ -36,7 +36,7 @@
     },
     "emulators": [
         {
-            "name": "Snes9x EX+",
+            "name": "Standalone Snes9x EX+",
             "unique_id": "sfc.com.explusalpha.Snes9xPlus",
             "description": "Supported extensions: bml, bs, bsx, dx2, fig, gb, gbc, gd3, gd7, rom, sfc, smc, st, swc.",
             "is_retroachievements_compatible": false,

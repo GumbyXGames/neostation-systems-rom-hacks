@@ -34,7 +34,7 @@
     },
     "emulators": [
         {
-            "name": "Dolphin Handheld",
+            "name": "Standalone Dolphin Handheld",
             "unique_id": "gc.org.dolphinemu.handheld",
             "description": "Supported extensions: ciso, dff, dol, elf, gcm, gcz, iso, tgc, wad, wbfs, rvz, m3u.",
             "is_retroachievements_compatible": true,
@@ -45,7 +45,7 @@
             }
         },
         {
-            "name": "Dolphin MMJR",
+            "name": "Standalone Dolphin MMJR",
             "unique_id": "gc.org.mm.jr",
             "description": "Supported extensions: ciso, dff, dol, elf, gcm, gcz, iso, tgc, wad, wbfs, rvz.",
             "is_retroachievements_compatible": false,
@@ -56,7 +56,7 @@
             }
         },
         {
-            "name": "Dolphin MMJR2",
+            "name": "Standalone Dolphin MMJR2",
             "unique_id": "gc.org.dolphinemu.mmjr",
             "description": "Supported extensions: ciso, dff, dol, elf, gcm, gcz, iso, tgc, wad, wbfs, rvz.",
             "is_retroachievements_compatible": false,
@@ -67,7 +67,7 @@
             }
         },
         {
-            "name": "Dolphin MMJ",
+            "name": "Standalone Dolphin MMJ",
             "unique_id": "gc.org.mm.j",
             "description": "Supported extensions: ciso, dff, dol, elf, gcm, gcz, iso, tgc, wad, wbfs, rvz.",
             "is_retroachievements_compatible": false,
@@ -78,7 +78,7 @@
             }
         },
         {
-            "name": "Dolphin Official",
+            "name": "Standalone Dolphin Official",
             "unique_id": "gc.org.dolphinemu.dolphinemu",
             "description": "Supported extensions: ciso, dff, dol, elf, gcm, gcz, iso, tgc, wad, wbfs, rvz, m3u.",
             "is_retroachievements_compatible": true,

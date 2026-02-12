@@ -32,7 +32,7 @@
     },
     "emulators": [
         {
-            "name": "MsxEmu",
+            "name": "Standalone MsxEmu",
             "unique_id": "msx.com.explusalpha.MsxEmu",
             "description": "Supported extensions: cas, col, dsk, fdi, m3u, mx1, mx2, ri, rom, sc, sg.",
             "is_retroachievements_compatible": false,

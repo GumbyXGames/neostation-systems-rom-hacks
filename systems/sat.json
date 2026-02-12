@@ -30,7 +30,7 @@
     },
     "emulators": [
         {
-            "name": "YabaSanshiro 2 Pro",
+            "name": "Standalone YabaSanshiro 2 Pro",
             "unique_id": "saturn.org.devmiyax.yabasanshioro2.pro",
             "description": "Supported extensions: bin, ccd, chd, cue, iso, m3u, mds, toc, zip.",
             "is_retroachievements_compatible": true,
@@ -41,7 +41,7 @@
             }
         },
         {
-            "name": "YabaSanshiro 2",
+            "name": "Standalone YabaSanshiro 2",
             "unique_id": "saturn.org.devmiyax.yabasanshioro2",
             "description": "Supported extensions: bin, ccd, chd, cue, iso, m3u, mds, toc, zip.",
             "is_retroachievements_compatible": true,
@@ -52,7 +52,7 @@
             }
         },
         {
-            "name": "YabaSanshiro Pro",
+            "name": "Standalone YabaSanshiro Pro",
             "unique_id": "saturn.org.uoyabause.android.pro",
             "description": "Supported extensions: bin, ccd, chd, cue, iso, m3u, mds, toc, zip.",
             "is_retroachievements_compatible": true,
@@ -63,7 +63,7 @@
             }
         },
         {
-            "name": "YabaSanshiro",
+            "name": "Standalone YabaSanshiro",
             "unique_id": "saturn.org.uoyabause.android",
             "description": "Supported extensions: bin, ccd, chd, cue, iso, m3u, mds, toc, zip.",
             "is_retroachievements_compatible": true,
@@ -74,7 +74,7 @@
             }
         },
         {
-            "name": "Saturn.EMU",
+            "name": "Standalone Saturn.EMU",
             "unique_id": "saturn.com.explusalpha.SaturnEmu",
             "description": "Supported extensions: ccd, chd, cue, m3u, toc.",
             "is_retroachievements_compatible": false,

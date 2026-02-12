@@ -31,7 +31,7 @@
     },
     "emulators": [
         {
-            "name": "Pizza Boy GBA Basic",
+            "name": "Standalone Pizza Boy GBA Basic",
             "unique_id": "gba.it.dbtecno.pizzaboygba",
             "description": "Supported extensions: gba, zip, 7z.",
             "is_retroachievements_compatible": true,
@@ -42,7 +42,7 @@
             }
         },
         {
-            "name": "Pizza Boy A Pro",
+            "name": "Standalone Pizza Boy GBA Pro",
             "unique_id": "gba.it.dbtecno.pizzaboygbapro",
             "description": "Supported extensions: gba, zip, 7z.",
             "is_retroachievements_compatible": true,
@@ -53,7 +53,7 @@
             }
         },
         {
-            "name": "SkyEmu",
+            "name": "Standalone SkyEmu",
             "unique_id": "gba.com.sky.SkyEmu",
             "description": "Supported extensions: gba.",
             "is_retroachievements_compatible": true,
@@ -64,7 +64,7 @@
             }
         },
         {
-            "name": "GBA.emu",
+            "name": "Standalone GBA.emu",
             "unique_id": "gba.com.explusalpha.GbaEmu",
             "description": "Support extensions: agb, bin, cgb, dmg, gb, gba, gbc, gbz, sgb.",
             "is_retroachievements_compatible": false,
@@ -75,7 +75,7 @@
             }
         },
         {
-            "name": "GBA Emulator",
+            "name": "Standalone GBA Emulator",
             "unique_id": "gba.com.fastemulator.gbafree",
             "description": "Support extensions: agb, bin, cgb, dmg, gb, gba, gbc, gbz, sgb.",
             "is_retroachievements_compatible": false,
@@ -86,7 +86,7 @@
             }
         },
         {
-            "name": "GBA Emulator (Paid)",
+            "name": "Standalone GBA Emulator (Paid)",
             "unique_id": "gba.com.fastemulator.gba",
             "description": "Support extensions: agb, bin, cgb, dmg, gb, gba, gbc, gbz, sgb.",
             "is_retroachievements_compatible": false,
@@ -97,7 +97,7 @@
             }
         },
         {
-            "name": "Linkboy",
+            "name": "Standalone Linkboy",
             "unique_id": "gba.com.pixelrespawn.linkboy",
             "description": "Support extensions: bin, cgb, dmg, gb, gbc, gbs, rom, sgb.",
             "is_retroachievements_compatible": true,

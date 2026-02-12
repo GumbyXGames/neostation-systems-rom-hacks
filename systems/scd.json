@@ -40,7 +40,7 @@
     },
     "emulators": [
         {
-            "name": "Md.emu",
+            "name": "Standalone Md.emu",
             "unique_id": "segacd.com.explusalpha.MdEmu",
             "description": "Support extensions: 32x, 68k, bin, bms, chd, cue, gen, gg, iso, m3u, md, mdx, pco, sg, sgd, smd, sms.",
             "is_retroachievements_compatible": false,

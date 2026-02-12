@@ -69,8 +69,17 @@
             "description": "PCSX2 core for RetroArch.",
             "is_retroachievements_compatible": true,
             "platforms": {
-                "android": {
-                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"pcsx2\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg\""
+                "windows": {
+                    "executable": "retroarch.exe",
+                    "args": "-L pcsx2_libretro.dll \"{file.path}\""
+                },
+                "linux": {
+                    "executable": "retroarch",
+                    "args": "-L pcsx2_libretro.so \"{file.path}\""
+                },
+                "macos": {
+                    "executable": "retroarch",
+                    "args": "-L pcsx2_libretro.dylib \"{file.path}\""
                 }
             }
         },
@@ -80,8 +89,17 @@
             "description": "PCSX2 core for RetroArch 64.",
             "is_retroachievements_compatible": true,
             "platforms": {
-                "android": {
-                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"pcsx2\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg\""
+                "windows": {
+                    "executable": "retroarch.exe",
+                    "args": "-L pcsx2_libretro.dll \"{file.path}\""
+                },
+                "linux": {
+                    "executable": "retroarch",
+                    "args": "-L pcsx2_libretro.so \"{file.path}\""
+                },
+                "macos": {
+                    "executable": "retroarch",
+                    "args": "-L pcsx2_libretro.dylib \"{file.path}\""
                 }
             }
         },
@@ -91,13 +109,82 @@
             "description": "PCSX2 core for RetroArch 32.",
             "is_retroachievements_compatible": true,
             "platforms": {
-                "android": {
-                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"pcsx2\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg\""
+                "windows": {
+                    "executable": "retroarch.exe",
+                    "args": "-L pcsx2_libretro.dll \"{file.path}\""
+                },
+                "linux": {
+                    "executable": "retroarch",
+                    "args": "-L pcsx2_libretro.so \"{file.path}\""
+                },
+                "macos": {
+                    "executable": "retroarch",
+                    "args": "-L pcsx2_libretro.dylib \"{file.path}\""
                 }
             }
         },
         {
-            "name": "NetherSX2",
+            "name": "RetroArch LRPS2",
+            "unique_id": "ps2.ra.lrps2",
+            "description": "LRPS2 core for RetroArch.",
+            "is_retroachievements_compatible": true,
+            "platforms": {
+                "windows": {
+                    "executable": "retroarch.exe",
+                    "args": "-L pcsx2_libretro.dll \"{file.path}\""
+                },
+                "linux": {
+                    "executable": "retroarch",
+                    "args": "-L pcsx2_libretro.so \"{file.path}\""
+                },
+                "macos": {
+                    "executable": "retroarch",
+                    "args": "-L pcsx2_libretro.dylib \"{file.path}\""
+                }
+            }
+        },
+        {
+            "name": "RetroArch64 LRPS2",
+            "unique_id": "ps2.ra64.lrps2",
+            "description": "LRPS2 core for RetroArch 64.",
+            "is_retroachievements_compatible": true,
+            "platforms": {
+                "windows": {
+                    "executable": "retroarch.exe",
+                    "args": "-L pcsx2_libretro.dll \"{file.path}\""
+                },
+                "linux": {
+                    "executable": "retroarch",
+                    "args": "-L pcsx2_libretro.so \"{file.path}\""
+                },
+                "macos": {
+                    "executable": "retroarch",
+                    "args": "-L pcsx2_libretro.dylib \"{file.path}\""
+                }
+            }
+        },
+        {
+            "name": "RetroArch32 LRPS2",
+            "unique_id": "ps2.ra32.lrps2",
+            "description": "LRPS2 core for RetroArch 32.",
+            "is_retroachievements_compatible": true,
+            "platforms": {
+                "windows": {
+                    "executable": "retroarch.exe",
+                    "args": "-L pcsx2_libretro.dll \"{file.path}\""
+                },
+                "linux": {
+                    "executable": "retroarch",
+                    "args": "-L pcsx2_libretro.so \"{file.path}\""
+                },
+                "macos": {
+                    "executable": "retroarch",
+                    "args": "-L pcsx2_libretro.dylib \"{file.path}\""
+                }
+            }
+        },
+        {
+            "name": "Standalone NetherSX2/AetherSX2",
             "default": true,
             "unique_id": "ps2.xyz.aethersx2.android",
             "description": "Supported extensions: iso, chd, gz, mdf.",
@@ -109,7 +196,7 @@
             }
         },
         {
-            "name": "Aethersx2 Turnip",
+            "name": "Standalone Aethersx2 Turnip",
             "unique_id": "ps2.xyz.aethersx2.custom",
             "description": "Supported extensions: iso, chd, gz.",
             "is_retroachievements_compatible": false,
@@ -120,7 +207,7 @@
             }
         },
         {
-            "name": "ARMSX2",
+            "name": "Standalone ARMSX2",
             "unique_id": "ps2.come.nanodata.armsx2",
             "description": "Supported extensions: iso, chd, gz, mdf, bin, ciso, img.",
             "is_retroachievements_compatible": false,
@@ -131,7 +218,7 @@
             }
         },
         {
-            "name": "ARMSX2 (Nightly)",
+            "name": "Standalone ARMSX2 (Nightly)",
             "unique_id": "ps2.com.nanodata.armsx2.debug",
             "description": "Supported extensions: iso, chd, gz, mdf, bin, ciso, img.",
             "is_retroachievements_compatible": false,
@@ -142,13 +229,21 @@
             }
         },
         {
-            "name": "PCSX2",
+            "name": "Standalone PCSX2",
             "unique_id": "ps2.net.pcsx2.android",
             "description": "Supported extensions: iso, chd, gz, mdf, bin, ciso, img.",
             "is_retroachievements_compatible": false,
             "platforms": {
                 "windows": {
                     "executable": "pcsx2.exe",
+                    "args": "{file.path}"
+                },
+                "linux": {
+                    "executable": "pcsx2",
+                    "args": "{file.path}"
+                },
+                "macos": {
+                    "executable": "pcsx2",
                     "args": "{file.path}"
                 }
             }

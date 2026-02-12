@@ -68,7 +68,7 @@
             }
         },
         {
-            "name": "DroidArcadia",
+            "name": "Standalone DroidArcadia",
             "unique_id": "a2001.droidarcadia",
             "is_retroachievements_compatible": true,
             "description": "Supported extensions: zip.",
@@ -79,7 +79,7 @@
             }
         },
         {
-            "name": "WinArcadia",
+            "name": "StandaloneWinArcadia",
             "unique_id": "a2001.winarcadia",
             "is_retroachievements_compatible": true,
             "description": "Supported extensions: zip.",
