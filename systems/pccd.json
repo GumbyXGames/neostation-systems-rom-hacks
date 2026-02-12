@@ -1,11 +1,11 @@
 {
     "system": {
         "id": "pccd",
-        "name": "TurboGrafx-CD",
+        "name": "PC Engine-CD",
         "details": {
             "manufacturer": "NEC",
             "release_date": "1988-12-04",
-            "description": "The TurboGrafx-CD (PC Engine CD-ROM²) is an add-on interface for the TurboGrafx-16 console."
+            "description": "The PC Engine-CD (PC Engine CD-ROM²) is an add-on interface for the PC Engine console."
         },
         "ids": {
             "screenscraper": 114,
