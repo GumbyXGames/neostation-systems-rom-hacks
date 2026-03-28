@@ -2,6 +2,7 @@
     "system": {
         "id": "mo2",
         "name": "Magnavox Odyssey 2",
+        "short_name": "MO2",
         "details": {
             "manufacturer": "Magnavox",
             "release_date": "1978-01-01",
@@ -17,6 +18,10 @@
             "videopac",
             "Magnavox Odyssey 2"
         ],
+        "colors": [
+            "#212121",
+            "#F5F5F5"
+        ],
         "extensions": [
             "bin",
             "zip",
@@ -26,35 +31,35 @@
     "emulators": [
         {
             "name": "RetroArch64 O2EM",
-            "unique_id": "odyssey2.ra64.o2em",
+            "unique_id": "mo2.ra64.o2em",
             "description": "Supported extensions: bin.",
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"o2em\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"o2em\""
                 }
             }
         },
         {
             "name": "RetroArch32 O2EM",
-            "unique_id": "odyssey2.ra32.o2em",
+            "unique_id": "mo2.ra32.o2em",
             "description": "Supported extensions: bin.",
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"o2em\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"o2em\""
                 }
             }
         },
         {
             "name": "RetroArch O2EM",
             "default": true,
-            "unique_id": "odyssey2.ra.o2em",
+            "unique_id": "mo2.ra.o2em",
             "description": "Supported extensions: bin.",
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"o2em\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"o2em\""
                 },
                 "windows": {
                     "executable": "retroarch.exe",
@@ -70,5 +75,20 @@
                 }
             }
         }
-    ]
+    ],
+    "neosync": {
+        "sync": true,
+        "android_sync_folder": [
+            "{SYNC_DIR}"
+        ],
+        "windows_sync_folder": [
+            "{SYNC_DIR}"
+        ],
+        "linux_sync_folder": [
+            "{SYNC_DIR}"
+        ],
+        "macos_sync_folder": [
+            "{SYNC_DIR}"
+        ]
+    }
 }

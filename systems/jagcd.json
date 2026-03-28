@@ -1,0 +1,95 @@
+{
+    "system": {
+        "id": "jagcd",
+        "name": "Atari Jaguar CD",
+        "short_name": "JCD",
+        "details": {
+            "manufacturer": "",
+            "release_date": "",
+            "description": ""
+        },
+        "ids": {
+            "screenscraper": 171,
+            "retroachievements": 77
+        },
+        "folders": [
+            "jagcd"
+        ],
+        "colors": [
+            "#424242",
+            "#9E9E9E"
+        ],
+        "extensions": [
+            "j64",
+            "jag",
+            "rom",
+            "abs",
+            "cof",
+            "bin",
+            "prg",
+            "zip",
+            "7z"
+        ]
+    },
+    "emulators": [
+        {
+            "name": "IrataJaguar",
+            "unique_id": "jagcd.jaguarcd.ru.vastness.altmer.iratajaguar",
+            "description": "Supported extensions: j64, jag, rom, abs, cof, bin, prg, zip, 7z.",
+            "is_retroachievements_compatible": false,
+            "platforms": {
+                "android": {
+                    "launch_arguments": "-n ru.vastness.altmer.iratajaguar/ru.vastness.altmer.iratajaguar.MainActivity   -e rom {file.path}   --activity-clear-task   --activity-clear-top"
+                }
+            }
+        },
+        {
+            "name": "RetroArch64 Virtual Jaguar",
+            "unique_id": "jagcd.jaguarcd.ra64.virtualjaguar",
+            "description": "Supported extensions: j64, jag, rom, abs, cof, bin, prg, zip, 7z.",
+            "is_retroachievements_compatible": true,
+            "platforms": {
+                "android": {
+                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture  -e ROM {file.path}  -e LIBRETRO virtualjaguar  -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg"
+                }
+            }
+        },
+        {
+            "name": "RetroArch32 Virtual Jaguar",
+            "unique_id": "jagcd.jaguarcd.ra32.virtualjaguar",
+            "description": "Supported extensions: j64, jag, rom, abs, cof, bin, prg, zip, 7z.",
+            "is_retroachievements_compatible": true,
+            "platforms": {
+                "android": {
+                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture  -e ROM {file.path}  -e LIBRETRO virtualjaguar  -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg"
+                }
+            }
+        },
+        {
+            "name": "RetroArch Virtual Jaguar",
+            "unique_id": "jagcd.jaguarcd.ra.virtualjaguar",
+            "description": "Supported extensions: j64, jag, rom, abs, cof, bin, prg, zip, 7z.",
+            "is_retroachievements_compatible": true,
+            "platforms": {
+                "android": {
+                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture  -e ROM {file.path}  -e LIBRETRO virtualjaguar  -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg"
+                }
+            }
+        }
+    ],
+    "neosync": {
+        "sync": true,
+        "android_sync_folder": [
+            "{SYNC_DIR}"
+        ],
+        "windows_sync_folder": [
+            "{SYNC_DIR}"
+        ],
+        "linux_sync_folder": [
+            "{SYNC_DIR}"
+        ],
+        "macos_sync_folder": [
+            "{SYNC_DIR}"
+        ]
+    }
+}

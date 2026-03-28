@@ -2,6 +2,7 @@
     "system": {
         "id": "wsv",
         "name": "Watara Supervision",
+        "short_name": "WSV",
         "details": {
             "manufacturer": "Watara",
             "release_date": "1992-01-01",
@@ -14,7 +15,12 @@
         "folders": [
             "wsv",
             "supervision",
-            "Watara Supervision"
+            "Watara Supervision",
+            "watara"
+        ],
+        "colors": [
+            "#9E9E9E",
+            "#616161"
         ],
         "extensions": [
             "bin",
@@ -26,35 +32,35 @@
     "emulators": [
         {
             "name": "RetroArch64 Potator",
-            "unique_id": "supervision.ra64.potator",
+            "unique_id": "wsv.ra64.potator",
             "description": "Supported extensions: bin, sv, zip, 7z",
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"potator\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"potator\""
                 }
             }
         },
         {
             "name": "RetroArch32 Potator",
-            "unique_id": "supervision.ra32.potator",
+            "unique_id": "wsv.ra32.potator",
             "description": "Supported extensions: bin, sv, zip, 7z",
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"potator\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"potator\""
                 }
             }
         },
         {
             "name": "RetroArch Potator",
             "default": true,
-            "unique_id": "supervision.ra.potator",
+            "unique_id": "wsv.ra.potator",
             "description": "Supported extensions: bin, sv, zip, 7z",
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"potator\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"potator\""
                 },
                 "windows": {
                     "executable": "retroarch.exe",
@@ -70,5 +76,20 @@
                 }
             }
         }
-    ]
+    ],
+    "neosync": {
+        "sync": true,
+        "android_sync_folder": [
+            "{SYNC_DIR}"
+        ],
+        "windows_sync_folder": [
+            "{SYNC_DIR}"
+        ],
+        "linux_sync_folder": [
+            "{SYNC_DIR}"
+        ],
+        "macos_sync_folder": [
+            "{SYNC_DIR}"
+        ]
+    }
 }

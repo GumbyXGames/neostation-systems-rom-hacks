@@ -2,6 +2,7 @@
     "system": {
         "id": "gc",
         "name": "GameCube",
+        "short_name": "GC",
         "details": {
             "manufacturer": "Nintendo",
             "release_date": "2001-09-14",
@@ -15,6 +16,10 @@
             "gc",
             "GameCube",
             "Nintendo GameCube"
+        ],
+        "colors": [
+            "#7E57C2",
+            "#B0BEC5"
         ],
         "extensions": [
             "ciso",
@@ -37,7 +42,7 @@
             "name": "Standalone Dolphin Handheld",
             "unique_id": "gc.org.dolphinemu.handheld",
             "description": "Supported extensions: ciso, dff, dol, elf, gcm, gcz, iso, tgc, wad, wbfs, rvz, m3u.",
-            "is_retroachievements_compatible": true,
+            "is_retroachievements_compatible": false,
             "platforms": {
                 "android": {
                     "launch_arguments": "-n org.dolphinemu.handheld/org.dolphinemu.dolphinemu.ui.main.MainActivity -a android.intent.action.VIEW -d \"{file.uri}\" --activity-clear-task --activity-clear-top --activity-no-history"
@@ -118,7 +123,7 @@
             "is_retroachievements_compatible": false,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"dolphin\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"dolphin\""
                 }
             }
         },
@@ -130,7 +135,7 @@
             "is_retroachievements_compatible": false,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"dolphin\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"dolphin\""
                 },
                 "windows": {
                     "executable": "retroarch.exe",
@@ -146,5 +151,20 @@
                 }
             }
         }
-    ]
+    ],
+    "neosync": {
+        "sync": true,
+        "android_sync_folder": [
+            "{SYNC_DIR}"
+        ],
+        "windows_sync_folder": [
+            "{SYNC_DIR}"
+        ],
+        "linux_sync_folder": [
+            "{SYNC_DIR}"
+        ],
+        "macos_sync_folder": [
+            "{SYNC_DIR}"
+        ]
+    }
 }

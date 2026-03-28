@@ -2,6 +2,7 @@
     "system": {
         "id": "pcfx",
         "name": "NEC PC-FX",
+        "short_name": "PC-FX",
         "details": {
             "manufacturer": "NEC",
             "release_date": "1994-12-23",
@@ -9,11 +10,15 @@
         },
         "ids": {
             "screenscraper": 72,
-            "retroachievements": 49
+            "retroachievements": null
         },
         "folders": [
             "pcfx",
             "NEC PC-FX"
+        ],
+        "colors": [
+            "#F5F5F5",
+            "#42A5F5"
         ],
         "extensions": [
             "cue",
@@ -27,10 +32,10 @@
             "name": "RetroArch64 Beetle PC-FX",
             "unique_id": "pcfx.ra64.mednafen_pcfx",
             "description": "Supported extensions: cue, ccd, toc, chd.",
-            "is_retroachievements_compatible": true,
+            "is_retroachievements_compatible": false,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"mednafen_pcfx\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"mednafen_pcfx\""
                 }
             }
         },
@@ -38,10 +43,10 @@
             "name": "RetroArch32 Beetle PC-FX",
             "unique_id": "pcfx.ra32.mednafen_pcfx",
             "description": "Supported extensions: cue, ccd, toc, chd.",
-            "is_retroachievements_compatible": true,
+            "is_retroachievements_compatible": false,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"mednafen_pcfx\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"mednafen_pcfx\""
                 }
             }
         },
@@ -50,10 +55,10 @@
             "default": true,
             "unique_id": "pcfx.ra.mednafen_pcfx",
             "description": "Supported extensions: cue, ccd, toc, chd.",
-            "is_retroachievements_compatible": true,
+            "is_retroachievements_compatible": false,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"mednafen_pcfx\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"mednafen_pcfx\""
                 },
                 "windows": {
                     "executable": "retroarch.exe",
@@ -69,5 +74,20 @@
                 }
             }
         }
-    ]
+    ],
+    "neosync": {
+        "sync": true,
+        "android_sync_folder": [
+            "{SYNC_DIR}"
+        ],
+        "windows_sync_folder": [
+            "{SYNC_DIR}"
+        ],
+        "linux_sync_folder": [
+            "{SYNC_DIR}"
+        ],
+        "macos_sync_folder": [
+            "{SYNC_DIR}"
+        ]
+    }
 }

@@ -2,6 +2,7 @@
     "system": {
         "id": "uze",
         "name": "Uzebox",
+        "short_name": "UZE",
         "details": {
             "manufacturer": "Uzebox",
             "release_date": "2008-01-01",
@@ -15,6 +16,10 @@
             "uze",
             "Uzebox"
         ],
+        "colors": [
+            "#1976D2",
+            "#BBDEFB"
+        ],
         "extensions": [
             "uze",
             "zip",
@@ -24,35 +29,35 @@
     "emulators": [
         {
             "name": "RetroArch64 Uzem",
-            "unique_id": "uzebox.ra64.uzem",
+            "unique_id": "uze.ra64.uzem",
             "description": "Supported extensions: uze.",
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"uzem\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"uzem\""
                 }
             }
         },
         {
             "name": "RetroArch32 Uzem",
-            "unique_id": "uzebox.ra32.uzem",
+            "unique_id": "uze.ra32.uzem",
             "description": "Supported extensions: uze.",
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"uzem\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"uzem\""
                 }
             }
         },
         {
             "name": "RetroArch Uzem",
             "default": true,
-            "unique_id": "uzebox.ra.uzem",
+            "unique_id": "uze.ra.uzem",
             "description": "Supported extensions: uze.",
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"uzem\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"uzem\""
                 },
                 "windows": {
                     "executable": "retroarch.exe",
@@ -68,5 +73,20 @@
                 }
             }
         }
-    ]
+    ],
+    "neosync": {
+        "sync": true,
+        "android_sync_folder": [
+            "{SYNC_DIR}"
+        ],
+        "windows_sync_folder": [
+            "{SYNC_DIR}"
+        ],
+        "linux_sync_folder": [
+            "{SYNC_DIR}"
+        ],
+        "macos_sync_folder": [
+            "{SYNC_DIR}"
+        ]
+    }
 }

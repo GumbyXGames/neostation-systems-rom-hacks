@@ -2,6 +2,7 @@
     "system": {
         "id": "n64",
         "name": "Nintendo 64",
+        "short_name": "N64",
         "details": {
             "manufacturer": "Nintendo",
             "release_date": "1996-06-23",
@@ -14,6 +15,10 @@
         "folders": [
             "n64",
             "Nintendo 64"
+        ],
+        "colors": [
+            "#546e7a",
+            "#ff8a65"
         ],
         "extensions": [
             "bin",
@@ -78,7 +83,7 @@
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"mupen64plus_next_gles3\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"mupen64plus_next_gles3\""
                 }
             }
         },
@@ -89,7 +94,7 @@
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"mupen64plus_next_gles2\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"mupen64plus_next_gles2\""
                 }
             }
         },
@@ -100,7 +105,7 @@
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"parallel_n64\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"parallel_n64\""
                 }
             }
         },
@@ -111,7 +116,7 @@
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"mupen64plus_next_gles3\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"mupen64plus_next_gles3\""
                 }
             }
         },
@@ -122,7 +127,7 @@
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"mupen64plus_next_gles2\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"mupen64plus_next_gles2\""
                 }
             }
         },
@@ -133,7 +138,27 @@
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"parallel_n64\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"parallel_n64\""
+                }
+            }
+        },
+        {
+            "name": "RetroArch Mupen64Plus-Next",
+            "unique_id": "n64.ra.mupen64plus_next",
+            "description": "Supported extensions: bin, n64, u1, v64, z64, zip, 7z.",
+            "is_retroachievements_compatible": true,
+            "platforms": {
+                "windows": {
+                    "executable": "retroarch.exe",
+                    "args": "-L mupen64plus_next_libretro.dll \"{file.path}\""
+                },
+                "linux": {
+                    "executable": "retroarch",
+                    "args": "-L mupen64plus_next_libretro.so \"{file.path}\""
+                },
+                "macos": {
+                    "executable": "RetroArch.App",
+                    "args": "-L mupen64plus_next_libretro.dylib \"{file.path}\""
                 }
             }
         },
@@ -145,19 +170,7 @@
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"mupen64plus_next_gles3\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg\""
-                },
-                "windows": {
-                    "executable": "retroarch.exe",
-                    "args": "-L mupen64plus_next_gles3_libretro.dll \"{file.path}\""
-                },
-                "linux": {
-                    "executable": "retroarch",
-                    "args": "-L mupen64plus_next_gles3_libretro.so \"{file.path}\""
-                },
-                "macos": {
-                    "executable": "RetroArch.App",
-                    "args": "-L mupen64plus_next_gles3_libretro.dylib \"{file.path}\""
+                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"mupen64plus_next_gles3\""
                 }
             }
         },
@@ -168,19 +181,7 @@
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"mupen64plus_next_gles2\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg\""
-                },
-                "windows": {
-                    "executable": "retroarch.exe",
-                    "args": "-L mupen64plus_next_gles2_libretro.dll \"{file.path}\""
-                },
-                "linux": {
-                    "executable": "retroarch",
-                    "args": "-L mupen64plus_next_gles2_libretro.so \"{file.path}\""
-                },
-                "macos": {
-                    "executable": "RetroArch.App",
-                    "args": "-L mupen64plus_next_gles2_libretro.dylib \"{file.path}\""
+                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"mupen64plus_next_gles2\""
                 }
             }
         },
@@ -191,7 +192,7 @@
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"parallel_n64\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"parallel_n64\""
                 },
                 "windows": {
                     "executable": "retroarch.exe",
@@ -207,5 +208,20 @@
                 }
             }
         }
-    ]
+    ],
+    "neosync": {
+        "sync": true,
+        "android_sync_folder": [
+            "{SYNC_DIR}"
+        ],
+        "windows_sync_folder": [
+            "{SYNC_DIR}"
+        ],
+        "linux_sync_folder": [
+            "{SYNC_DIR}"
+        ],
+        "macos_sync_folder": [
+            "{SYNC_DIR}"
+        ]
+    }
 }

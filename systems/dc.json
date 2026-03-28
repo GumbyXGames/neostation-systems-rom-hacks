@@ -2,6 +2,7 @@
     "system": {
         "id": "dc",
         "name": "Sega Dreamcast",
+        "short_name": "DC",
         "details": {
             "manufacturer": "Sega",
             "release_date": "1998-11-27",
@@ -15,6 +16,10 @@
             "dc",
             "dreamcast",
             "Sega Dreamcast"
+        ],
+        "colors": [
+            "#F5F5F5",
+            "#FFAB91"
         ],
         "extensions": [
             "cdi",
@@ -32,7 +37,7 @@
     "emulators": [
         {
             "name": "Standalone Redream",
-            "unique_id": "dreamcast.io.recompiled.redream",
+            "unique_id": "dc.io.recompiled.redream",
             "description": "Supported extensions: 7z, bin, cdi, chd, cue, elf, gdi, lst, m3u, zip.",
             "is_retroachievements_compatible": false,
             "platforms": {
@@ -43,7 +48,7 @@
         },
         {
             "name": "Standalone Reicast",
-            "unique_id": "dreamcast.com.reicast.emulator",
+            "unique_id": "dc.com.reicast.emulator",
             "description": "Supported extensions: 7z, bin, cdi, chd, cue, elf, gdi, lst, zip.",
             "is_retroachievements_compatible": false,
             "platforms": {
@@ -54,7 +59,7 @@
         },
         {
             "name": "Standalone Flycast",
-            "unique_id": "dreamcast.com.flycast.emulator",
+            "unique_id": "dc.com.flycast.emulator",
             "description": "Supported extensions: 7z, bin, cdi, chd, cue, elf, gdi, lst, zip.",
             "is_retroachievements_compatible": true,
             "platforms": {
@@ -65,35 +70,35 @@
         },
         {
             "name": "RetroArch64 Flycast",
-            "unique_id": "dreamcast.ra64.flycast",
+            "unique_id": "dc.ra64.flycast",
             "description": "Supported extensions: cdi, gdi, chd, cue, bin, elf, zip, 7z, lst, m3u, zip.",
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"flycast\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"flycast\""
                 }
             }
         },
         {
             "name": "RetroArch32 Flycast",
-            "unique_id": "dreamcast.ra32.flycast",
+            "unique_id": "dc.ra32.flycast",
             "description": "Supported extensions: cdi, gdi, chd, cue, bin, elf, zip, 7z, lst, m3u, zip.",
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"flycast\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"flycast\""
                 }
             }
         },
         {
             "name": "RetroArch Flycast",
             "default": true,
-            "unique_id": "dreamcast.ra.flycast",
+            "unique_id": "dc.ra.flycast",
             "description": "Supported extensions: cdi, gdi, chd, cue, bin, elf, zip, 7z, lst, m3u, zip.",
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"flycast\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"flycast\""
                 },
                 "windows": {
                     "executable": "retroarch.exe",
@@ -109,5 +114,21 @@
                 }
             }
         }
-    ]
+    ],
+    "neosync": {
+        "sync": true,
+        "android_sync_folder": [
+            "{SYNC_DIR}"
+        ],
+        "windows_sync_folder": [
+            "{SYNC_DIR}",
+            "{FLYCAST_SAVES}"
+        ],
+        "linux_sync_folder": [
+            "{SYNC_DIR}"
+        ],
+        "macos_sync_folder": [
+            "{SYNC_DIR}"
+        ]
+    }
 }

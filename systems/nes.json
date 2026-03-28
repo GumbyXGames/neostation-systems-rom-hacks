@@ -2,6 +2,7 @@
     "system": {
         "id": "nes",
         "name": "Nintendo Entertainment System",
+        "short_name": "NES",
         "details": {
             "manufacturer": "Nintendo",
             "release_date": "1983-07-15",
@@ -15,6 +16,10 @@
             "nes",
             "Nintendo Entertainment System",
             "Nintendo"
+        ],
+        "colors": [
+            "#bdbdbd",
+            "#e53935"
         ],
         "extensions": [
             "bin",
@@ -56,10 +61,10 @@
             "name": "RetroArch64 Nestopia",
             "unique_id": "nes.ra64.nestopia",
             "description": "Supported extensions: fds, nes, unf, unif, zip, 7z.",
-            "is_retroachievements_compatible": true,
+            "is_retroachievements_compatible": false,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"nestopia\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"nestopia\""
                 }
             }
         },
@@ -70,7 +75,7 @@
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"fceumm\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"fceumm\""
                 }
             }
         },
@@ -81,7 +86,7 @@
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"mesen\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"mesen\""
                 }
             }
         },
@@ -92,7 +97,7 @@
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"quicknes\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"quicknes\""
                 }
             }
         },
@@ -100,10 +105,10 @@
             "name": "RetroArch64 bnes",
             "unique_id": "nes.ra64.bnes",
             "description": "Supported extensions: nes.",
-            "is_retroachievements_compatible": true,
+            "is_retroachievements_compatible": false,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"bnes\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"bnes\""
                 }
             }
         },
@@ -111,10 +116,10 @@
             "name": "RetroArch32 Nestopia",
             "unique_id": "nes.ra32.nestopia",
             "description": "Supported extensions: fds, nes, unf, unif, zip, 7z.",
-            "is_retroachievements_compatible": true,
+            "is_retroachievements_compatible": false,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"nestopia\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"nestopia\""
                 }
             }
         },
@@ -125,7 +130,7 @@
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"fceumm\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"fceumm\""
                 }
             }
         },
@@ -136,7 +141,7 @@
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"mesen\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"mesen\""
                 }
             }
         },
@@ -147,7 +152,7 @@
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"quicknes\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"quicknes\""
                 }
             }
         },
@@ -155,10 +160,10 @@
             "name": "RetroArch32 bnes",
             "unique_id": "nes.ra32.bnes",
             "description": "Supported extensions: nes.",
-            "is_retroachievements_compatible": true,
+            "is_retroachievements_compatible": false,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"bnes\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"bnes\""
                 }
             }
         },
@@ -166,10 +171,10 @@
             "name": "RetroArch Nestopia",
             "unique_id": "nes.ra.nestopia",
             "description": "Supported extensions: fds, nes, unf, unif, zip, 7z.",
-            "is_retroachievements_compatible": true,
+            "is_retroachievements_compatible": false,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"nestopia\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"nestopia\""
                 },
                 "windows": {
                     "executable": "retroarch.exe",
@@ -193,7 +198,7 @@
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"fceumm\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"fceumm\""
                 },
                 "windows": {
                     "executable": "retroarch.exe",
@@ -216,7 +221,7 @@
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"mesen\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"mesen\""
                 },
                 "windows": {
                     "executable": "retroarch.exe",
@@ -239,7 +244,7 @@
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"quicknes\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"quicknes\""
                 },
                 "windows": {
                     "executable": "retroarch.exe",
@@ -259,10 +264,10 @@
             "name": "RetroArch bnes",
             "unique_id": "nes.ra.bnes",
             "description": "Supported extensions: nes.",
-            "is_retroachievements_compatible": true,
+            "is_retroachievements_compatible": false,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"bnes\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"bnes\""
                 },
                 "windows": {
                     "executable": "retroarch.exe",
@@ -277,6 +282,66 @@
                     "args": "-L bnes_libretro.dylib \"{file.path}\""
                 }
             }
+        },
+        {
+            "name": "RetroArch FBNeo",
+            "unique_id": "nes.ra.fbneo",
+            "description": "Supported extensions: 7z, ccd, cue, zip.",
+            "is_retroachievements_compatible": false,
+            "platforms": {
+                "android": {
+                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"fbneo\""
+                },
+                "windows": {
+                    "executable": "retroarch.exe",
+                    "args": "-L fbneo_libretro.dll \"{file.path}\""
+                },
+                "linux": {
+                    "executable": "retroarch",
+                    "args": "-L fbneo_libretro.so \"{file.path}\""
+                },
+                "macos": {
+                    "executable": "RetroArch.App",
+                    "args": "-L fbneo_libretro.dylib \"{file.path}\""
+                }
+            }
+        },
+        {
+            "name": "RetroArch64 FBNeo",
+            "unique_id": "nes.ra64.fbneo",
+            "description": "Supported extensions: 7z, ccd, cue, zip.",
+            "is_retroachievements_compatible": false,
+            "platforms": {
+                "android": {
+                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"fbneo\""
+                }
+            }
+        },
+        {
+            "name": "RetroArch32 FBNeo",
+            "unique_id": "nes.ra32.fbneo",
+            "description": "Supported extensions: 7z, ccd, cue, zip.",
+            "is_retroachievements_compatible": false,
+            "platforms": {
+                "android": {
+                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"fbneo\""
+                }
+            }
         }
-    ]
+    ],
+    "neosync": {
+        "sync": true,
+        "android_sync_folder": [
+            "{SYNC_DIR}"
+        ],
+        "windows_sync_folder": [
+            "{SYNC_DIR}"
+        ],
+        "linux_sync_folder": [
+            "{SYNC_DIR}"
+        ],
+        "macos_sync_folder": [
+            "{SYNC_DIR}"
+        ]
+    }
 }

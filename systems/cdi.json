@@ -1,0 +1,78 @@
+{
+    "system": {
+        "id": "cdi",
+        "name": "Philips CD-i",
+        "short_name": "CD-i",
+        "details": {
+            "manufacturer": "",
+            "release_date": "",
+            "description": ""
+        },
+        "ids": {
+            "screenscraper": 133,
+            "retroachievements": null
+        },
+        "folders": [
+            "cdi"
+        ],
+        "colors": [
+            "#B0BEC5",
+            "#1976D2"
+        ],
+        "extensions": [
+            "cue",
+            "chd",
+            "iso"
+        ]
+    },
+    "emulators": [
+        {
+            "name": "Retroarch 64 same_cdi",
+            "unique_id": "cdi.ra64.same_cdi",
+            "description": "Supported extensions: cue, chd, iso",
+            "is_retroachievements_compatible": false,
+            "platforms": {
+                "android": {
+                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture -e ROM {file.path}  -e LIBRETRO same_cdi  -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg"
+                }
+            }
+        },
+        {
+            "name": "Retroarch32 same_cdi",
+            "unique_id": "cdi.ra32.same_cdi",
+            "description": "Supported extensions: cue, chd, iso",
+            "is_retroachievements_compatible": false,
+            "platforms": {
+                "android": {
+                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture -e ROM {file.path}  -e LIBRETRO same_cdi  -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg"
+                }
+            }
+        },
+        {
+            "name": "Retroarch same_cdi",
+            "unique_id": "cdi.ra.same_cdi",
+            "description": "Supported extensions: cue, chd, iso",
+            "is_retroachievements_compatible": false,
+            "platforms": {
+                "android": {
+                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture -e ROM {file.path}  -e LIBRETRO same_cdi  -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg"
+                }
+            }
+        }
+    ],
+    "neosync": {
+        "sync": true,
+        "android_sync_folder": [
+            "{SYNC_DIR}"
+        ],
+        "windows_sync_folder": [
+            "{SYNC_DIR}"
+        ],
+        "linux_sync_folder": [
+            "{SYNC_DIR}"
+        ],
+        "macos_sync_folder": [
+            "{SYNC_DIR}"
+        ]
+    }
+}

@@ -2,6 +2,7 @@
     "system": {
         "id": "gg",
         "name": "Sega Game Gear",
+        "short_name": "GG",
         "details": {
             "manufacturer": "Sega",
             "release_date": "1990-10-06",
@@ -15,6 +16,10 @@
             "gg",
             "gamegear",
             "Sega Game Gear"
+        ],
+        "colors": [
+            "#37474F",
+            "#78909C"
         ],
         "extensions": [
             "68k",
@@ -42,7 +47,7 @@
     "emulators": [
         {
             "name": "Standalone GG Emulator",
-            "unique_id": "gamegear.com.androidemu.gg",
+            "unique_id": "gg.com.androidemu.gg",
             "description": "Supported extensions: bin, bms, col, gg, rom, sg, sms.",
             "is_retroachievements_compatible": false,
             "platforms": {
@@ -53,7 +58,7 @@
         },
         {
             "name": "Standalone MasterGear",
-            "unique_id": "gamegear.com.fms.mg",
+            "unique_id": "gg.com.fms.mg",
             "description": "Supported extensions: gg, sms.",
             "is_retroachievements_compatible": false,
             "platforms": {
@@ -64,9 +69,9 @@
         },
         {
             "name": "Standalone Pizza Boy SC Pro",
-            "unique_id": "gamegear.it.dbtecno.pizzaboyscpro",
+            "unique_id": "gg.it.dbtecno.pizzaboyscpro",
             "description": "Supported extensions: gg, zip",
-            "is_retroachievements_compatible": false,
+            "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
                     "launch_arguments": "-n it.dbtecno.pizzaboyscpro/.MainActivity -e rom_uri {file.path} --activity-clear-task --activity-clear-top --activity-no-history"
@@ -75,123 +80,123 @@
         },
         {
             "name": "RetroArch64 Genesis Plus GX",
-            "unique_id": "gamegear.ra64.genesis_plus_gx",
+            "unique_id": "gg.ra64.genesis_plus_gx",
             "description": "Supported extensions: 68k, bin, chd, cue, gen, gg, iso, md, mdx, sg, smd, sms, zip, 7z.",
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"genesis_plus_gx\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"genesis_plus_gx\""
                 }
             }
         },
         {
             "name": "RetroArch64 Genesis Plus GX Wide",
-            "unique_id": "gamegear.ra64.genesis_plus_gx_wide",
+            "unique_id": "gg.ra64.genesis_plus_gx_wide",
             "description": "Supported extensions: 68k, bin, chd, cue, gen, gg, iso, md, mdx, sg, smd, sms, zip, 7z.",
-            "is_retroachievements_compatible": true,
+            "is_retroachievements_compatible": false,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"genesis_plus_gx_wide\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"genesis_plus_gx_wide\""
                 }
             }
         },
         {
             "name": "RetroArch64 SMS Plus",
-            "unique_id": "gamegear.ra64.smsplus",
+            "unique_id": "gg.ra64.smsplus",
             "description": "Supported extensions: bin, col, gg, rom, sg, sms.",
-            "is_retroachievements_compatible": true,
+            "is_retroachievements_compatible": false,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"smsplus\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"smsplus\""
                 }
             }
         },
         {
             "name": "RetroArch64 PicoDrive",
-            "unique_id": "gamegear.ra64.picodrive",
+            "unique_id": "gg.ra64.picodrive",
             "description": "Supported extensions: 32x, 68k, bin, chd, cue, gen, gg, iso, m3u, md, pco, sgd, smd, sms, 7z, zip.",
-            "is_retroachievements_compatible": true,
+            "is_retroachievements_compatible": false,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"picodrive\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"picodrive\""
                 }
             }
         },
         {
             "name": "RetroArch64 Gearsystem",
-            "unique_id": "gamegear.ra64.gearsystem",
+            "unique_id": "gg.ra64.gearsystem",
             "description": "Supported extensions: sms, gg, sg, bin, rom, 7z, zip",
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"gearsystem\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"gearsystem\""
                 }
             }
         },
         {
             "name": "RetroArch32 Genesis Plus GX",
-            "unique_id": "gamegear.ra32.genesis_plus_gx",
+            "unique_id": "gg.ra32.genesis_plus_gx",
             "description": "Supported extensions: 68k, bin, chd, cue, gen, gg, iso, md, mdx, sg, smd, sms, zip, 7z.",
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"genesis_plus_gx\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"genesis_plus_gx\""
                 }
             }
         },
         {
             "name": "RetroArch32 Genesis Plus GX Wide",
-            "unique_id": "gamegear.ra32.genesis_plus_gx_wide",
+            "unique_id": "gg.ra32.genesis_plus_gx_wide",
             "description": "Supported extensions: 68k, bin, chd, cue, gen, gg, iso, md, mdx, sg, smd, sms, zip, 7z.",
-            "is_retroachievements_compatible": true,
+            "is_retroachievements_compatible": false,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"genesis_plus_gx_wide\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"genesis_plus_gx_wide\""
                 }
             }
         },
         {
             "name": "RetroArch32 SMS Plus",
-            "unique_id": "gamegear.ra32.smsplus",
+            "unique_id": "gg.ra32.smsplus",
             "description": "Supported extensions: bin, col, gg, rom, sg, sms.",
-            "is_retroachievements_compatible": true,
+            "is_retroachievements_compatible": false,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"smsplus\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"smsplus\""
                 }
             }
         },
         {
             "name": "RetroArch32 PicoDrive",
-            "unique_id": "gamegear.ra32.picodrive",
+            "unique_id": "gg.ra32.picodrive",
             "description": "Supported extensions: 32x, 68k, bin, chd, cue, gen, gg, iso, m3u, md, pco, sgd, smd, sms, 7z, zip.",
-            "is_retroachievements_compatible": true,
+            "is_retroachievements_compatible": false,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"picodrive\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"picodrive\""
                 }
             }
         },
         {
             "name": "RetroArch32 Gearsystem",
-            "unique_id": "gamegear.ra32.gearsystem",
+            "unique_id": "gg.ra32.gearsystem",
             "description": "Supported extensions: sms, gg, sg, bin, rom, 7z, zip",
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"gearsystem\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"gearsystem\""
                 }
             }
         },
         {
             "name": "RetroArch Genesis Plus GX",
             "default": true,
-            "unique_id": "gamegear.ra.genesis_plus_gx",
+            "unique_id": "gg.ra.genesis_plus_gx",
             "description": "Supported extensions: 68k, bin, chd, cue, gen, gg, iso, md, mdx, sg, smd, sms, zip, 7z.",
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"genesis_plus_gx\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"genesis_plus_gx\""
                 },
                 "windows": {
                     "executable": "retroarch.exe",
@@ -209,12 +214,12 @@
         },
         {
             "name": "RetroArch Genesis Plus GX Wide",
-            "unique_id": "gamegear.ra.genesis_plus_gx_wide",
+            "unique_id": "gg.ra.genesis_plus_gx_wide",
             "description": "Supported extensions: 68k, bin, chd, cue, gen, gg, iso, md, mdx, sg, smd, sms, zip, 7z.",
-            "is_retroachievements_compatible": true,
+            "is_retroachievements_compatible": false,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"genesis_plus_gx_wide\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"genesis_plus_gx_wide\""
                 },
                 "windows": {
                     "executable": "retroarch.exe",
@@ -232,12 +237,12 @@
         },
         {
             "name": "RetroArch SMS Plus",
-            "unique_id": "gamegear.ra.smsplus",
+            "unique_id": "gg.ra.smsplus",
             "description": "Supported extensions: bin, col, gg, rom, sg, sms.",
-            "is_retroachievements_compatible": true,
+            "is_retroachievements_compatible": false,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"smsplus\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"smsplus\""
                 },
                 "windows": {
                     "executable": "retroarch.exe",
@@ -255,12 +260,12 @@
         },
         {
             "name": "RetroArch PicoDrive",
-            "unique_id": "gamegear.ra.picodrive",
+            "unique_id": "gg.ra.picodrive",
             "description": "Supported extensions: 32x, 68k, bin, chd, cue, gen, gg, iso, m3u, md, pco, sgd, smd, sms, 7z, zip.",
-            "is_retroachievements_compatible": true,
+            "is_retroachievements_compatible": false,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"picodrive\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"picodrive\""
                 },
                 "windows": {
                     "executable": "retroarch.exe",
@@ -278,12 +283,12 @@
         },
         {
             "name": "RetroArch Gearsystem",
-            "unique_id": "gamegear.ra.gearsystem",
+            "unique_id": "gg.ra.gearsystem",
             "description": "Supported extensions: sms, gg, sg, bin, rom, 7z, zip",
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"gearsystem\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"gearsystem\""
                 },
                 "windows": {
                     "executable": "retroarch.exe",
@@ -298,6 +303,66 @@
                     "args": "-L gearsystem_libretro.dylib \"{file.path}\""
                 }
             }
+        },
+        {
+            "name": "RetroArch FBNeo",
+            "unique_id": "gg.ra.fbneo",
+            "description": "Supported extensions: 7z, ccd, cue, zip.",
+            "is_retroachievements_compatible": false,
+            "platforms": {
+                "android": {
+                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"fbneo\""
+                },
+                "windows": {
+                    "executable": "retroarch.exe",
+                    "args": "-L fbneo_libretro.dll \"{file.path}\""
+                },
+                "linux": {
+                    "executable": "retroarch",
+                    "args": "-L fbneo_libretro.so \"{file.path}\""
+                },
+                "macos": {
+                    "executable": "RetroArch.App",
+                    "args": "-L fbneo_libretro.dylib \"{file.path}\""
+                }
+            }
+        },
+        {
+            "name": "RetroArch64 FBNeo",
+            "unique_id": "gg.ra64.fbneo",
+            "description": "Supported extensions: 7z, ccd, cue, zip.",
+            "is_retroachievements_compatible": false,
+            "platforms": {
+                "android": {
+                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"fbneo\""
+                }
+            }
+        },
+        {
+            "name": "RetroArch32 FBNeo",
+            "unique_id": "gg.ra32.fbneo",
+            "description": "Supported extensions: 7z, ccd, cue, zip.",
+            "is_retroachievements_compatible": false,
+            "platforms": {
+                "android": {
+                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"fbneo\""
+                }
+            }
         }
-    ]
+    ],
+    "neosync": {
+        "sync": true,
+        "android_sync_folder": [
+            "{SYNC_DIR}"
+        ],
+        "windows_sync_folder": [
+            "{SYNC_DIR}"
+        ],
+        "linux_sync_folder": [
+            "{SYNC_DIR}"
+        ],
+        "macos_sync_folder": [
+            "{SYNC_DIR}"
+        ]
+    }
 }

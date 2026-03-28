@@ -2,6 +2,7 @@
     "system": {
         "id": "wasm4",
         "name": "WASM-4",
+        "short_name": "WASM-4",
         "details": {
             "manufacturer": "WASM-4",
             "release_date": "2021-11-01",
@@ -15,6 +16,10 @@
             "wasm4",
             "WASM-4"
         ],
+        "colors": [
+            "#000000",
+            "#FF0000"
+        ],
         "extensions": [
             "wasm"
         ]
@@ -27,7 +32,7 @@
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"wasm4\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"wasm4\""
                 }
             }
         },
@@ -38,7 +43,7 @@
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"wasm4\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"wasm4\""
                 }
             }
         },
@@ -50,7 +55,7 @@
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"wasm4\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"wasm4\""
                 },
                 "windows": {
                     "executable": "retroarch.exe",
@@ -66,5 +71,12 @@
                 }
             }
         }
-    ]
+    ],
+    "neosync": {
+        "sync": false,
+        "android_sync_folder": [],
+        "windows_sync_folder": [],
+        "linux_sync_folder": [],
+        "macos_sync_folder": []
+    }
 }

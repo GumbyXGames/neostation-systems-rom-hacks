@@ -2,6 +2,7 @@
     "system": {
         "id": "psp",
         "name": "Sony PlayStation Portable",
+        "short_name": "PSP",
         "details": {
             "manufacturer": "Sony",
             "release_date": "2004-12-12",
@@ -16,6 +17,10 @@
             "pspminis",
             "PlayStation Portable",
             "Sony PlayStation Portable"
+        ],
+        "colors": [
+            "#212121",
+            "#90A4AE"
         ],
         "extensions": [
             "cso",
@@ -65,7 +70,7 @@
             "name": "Standalone PPSSPP Legacy",
             "unique_id": "psp.org.ppsspp.ppsspplegacy",
             "description": "Supported extensions: cso, chd, elf, iso, pbp, prx.",
-            "is_retroachievements_compatible": true,
+            "is_retroachievements_compatible": false,
             "platforms": {
                 "android": {
                     "launch_arguments": "-n org.ppsspp.ppsspplegacy/org.ppsspp.ppsspp.PpssppActivity -a android.intent.action.VIEW -c android.intent.category.DEFAULT -d {file.uri} -t application/octet-stream --activity-clear-task --activity-clear-top --activity-no-history"
@@ -79,7 +84,7 @@
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"ppsspp\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"ppsspp\""
                 }
             }
         },
@@ -90,7 +95,7 @@
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"ppsspp\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"ppsspp\""
                 }
             }
         },
@@ -102,7 +107,7 @@
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"ppsspp\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"ppsspp\""
                 },
                 "windows": {
                     "executable": "retroarch.exe",
@@ -118,5 +123,12 @@
                 }
             }
         }
-    ]
+    ],
+    "neosync": {
+        "sync": false,
+        "android_sync_folder": [],
+        "windows_sync_folder": [],
+        "linux_sync_folder": [],
+        "macos_sync_folder": []
+    }
 }

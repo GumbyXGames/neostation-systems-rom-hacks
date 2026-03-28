@@ -2,6 +2,7 @@
     "system": {
         "id": "pce",
         "name": "PC Engine",
+        "short_name": "PCE",
         "details": {
             "manufacturer": "NEC",
             "release_date": "1987-10-30",
@@ -15,6 +16,10 @@
             "pce",
             "PCEngine",
             "NEC PC Engine"
+        ],
+        "colors": [
+            "#E0E0E0",
+            "#FF7043"
         ],
         "extensions": [
             "ccd",
@@ -47,7 +52,7 @@
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"mednafen_pce_fast\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"mednafen_pce_fast\""
                 }
             }
         },
@@ -55,10 +60,10 @@
             "name": "RetroArch64 Beetle PCE",
             "unique_id": "pce.ra64.mednafen_pce",
             "description": "Supported extensions: ccd, chd, cue, m3u, pce, sgx, toc, zip, 7z.",
-            "is_retroachievements_compatible": true,
+            "is_retroachievements_compatible": false,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"mednafen_pce\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"mednafen_pce\""
                 }
             }
         },
@@ -69,7 +74,7 @@
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"mednafen_pce_fast\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"mednafen_pce_fast\""
                 }
             }
         },
@@ -77,10 +82,10 @@
             "name": "RetroArch32 Beetle PCE",
             "unique_id": "pce.ra32.mednafen_pce",
             "description": "Supported extensions: ccd, chd, cue, m3u, pce, sgx, toc, zip, 7z.",
-            "is_retroachievements_compatible": true,
+            "is_retroachievements_compatible": false,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"mednafen_pce\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"mednafen_pce\""
                 }
             }
         },
@@ -91,7 +96,7 @@
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"mednafen_pce_fast\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"mednafen_pce_fast\""
                 },
                 "windows": {
                     "executable": "retroarch.exe",
@@ -112,10 +117,10 @@
             "default": true,
             "unique_id": "pce.ra.mednafen_pce",
             "description": "Supported extensions: ccd, chd, cue, m3u, pce, sgx, toc, zip, 7z.",
-            "is_retroachievements_compatible": true,
+            "is_retroachievements_compatible": false,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"mednafen_pce\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"mednafen_pce\""
                 },
                 "windows": {
                     "executable": "retroarch.exe",
@@ -130,6 +135,66 @@
                     "args": "-L mednafen_pce_libretro.dylib \"{file.path}\""
                 }
             }
+        },
+        {
+            "name": "RetroArch FBNeo",
+            "unique_id": "pce.ra.fbneo",
+            "description": "Supported extensions: 7z, ccd, cue, zip.",
+            "is_retroachievements_compatible": false,
+            "platforms": {
+                "android": {
+                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"fbneo\""
+                },
+                "windows": {
+                    "executable": "retroarch.exe",
+                    "args": "-L fbneo_libretro.dll \"{file.path}\""
+                },
+                "linux": {
+                    "executable": "retroarch",
+                    "args": "-L fbneo_libretro.so \"{file.path}\""
+                },
+                "macos": {
+                    "executable": "RetroArch.App",
+                    "args": "-L fbneo_libretro.dylib \"{file.path}\""
+                }
+            }
+        },
+        {
+            "name": "RetroArch64 FBNeo",
+            "unique_id": "pce.ra64.fbneo",
+            "description": "Supported extensions: 7z, ccd, cue, zip.",
+            "is_retroachievements_compatible": false,
+            "platforms": {
+                "android": {
+                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"fbneo\""
+                }
+            }
+        },
+        {
+            "name": "RetroArch32 FBNeo",
+            "unique_id": "pce.ra32.fbneo",
+            "description": "Supported extensions: 7z, ccd, cue, zip.",
+            "is_retroachievements_compatible": false,
+            "platforms": {
+                "android": {
+                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"fbneo\""
+                }
+            }
         }
-    ]
+    ],
+    "neosync": {
+        "sync": true,
+        "android_sync_folder": [
+            "{SYNC_DIR}"
+        ],
+        "windows_sync_folder": [
+            "{SYNC_DIR}"
+        ],
+        "linux_sync_folder": [
+            "{SYNC_DIR}"
+        ],
+        "macos_sync_folder": [
+            "{SYNC_DIR}"
+        ]
+    }
 }

@@ -2,6 +2,7 @@
     "system": {
         "id": "cps3",
         "name": "CP System III",
+        "short_name": "CPSIII",
         "details": {
             "manufacturer": "Capcom",
             "release_date": "1996-01-01",
@@ -16,6 +17,10 @@
             "Capcom Play System 3",
             "Capcom Play System III"
         ],
+        "colors": [
+            "#0D47A1",
+            "#FFD600"
+        ],
         "extensions": [
             "zip",
             "7z"
@@ -29,7 +34,7 @@
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"fbneo\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"fbneo\""
                 }
             }
         },
@@ -37,10 +42,10 @@
             "name": "RetroArch64 FBAlpha2012",
             "unique_id": "cps3.ra64.fbalpha2012",
             "description": "Supported extensions: 7z, iso, zip.",
-            "is_retroachievements_compatible": true,
+            "is_retroachievements_compatible": false,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"fbalpha2012\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"fbalpha2012\""
                 }
             }
         },
@@ -48,10 +53,10 @@
             "name": "RetroArch64 FBAlpha2012 CPS3",
             "unique_id": "cps3.ra64.fbalpha2012_cps3",
             "description": "Supported extensions: zip.",
-            "is_retroachievements_compatible": true,
+            "is_retroachievements_compatible": false,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"fbalpha2012_cps3\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"fbalpha2012_cps3\""
                 }
             }
         },
@@ -62,7 +67,7 @@
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"fbneo\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"fbneo\""
                 }
             }
         },
@@ -70,10 +75,10 @@
             "name": "RetroArch32 FBAlpha2012",
             "unique_id": "cps3.ra32.fbalpha2012",
             "description": "Supported extensions: 7z, iso, zip.",
-            "is_retroachievements_compatible": true,
+            "is_retroachievements_compatible": false,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"fbalpha2012\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"fbalpha2012\""
                 }
             }
         },
@@ -81,10 +86,10 @@
             "name": "RetroArch32 FBAlpha2012 CPS3",
             "unique_id": "cps3.ra32.fbalpha2012_cps3",
             "description": "Supported extensions: zip.",
-            "is_retroachievements_compatible": true,
+            "is_retroachievements_compatible": false,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"fbalpha2012_cps3\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"fbalpha2012_cps3\""
                 }
             }
         },
@@ -96,7 +101,7 @@
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"fbneo\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"fbneo\""
                 },
                 "windows": {
                     "executable": "retroarch.exe",
@@ -116,10 +121,10 @@
             "name": "RetroArch FBAlpha2012",
             "unique_id": "cps3.ra.fbalpha2012",
             "description": "Supported extensions: 7z, iso, zip.",
-            "is_retroachievements_compatible": true,
+            "is_retroachievements_compatible": false,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"fbalpha2012\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"fbalpha2012\""
                 },
                 "windows": {
                     "executable": "retroarch.exe",
@@ -139,10 +144,10 @@
             "name": "RetroArch FBAlpha2012 CPS3",
             "unique_id": "cps3.ra.fbalpha2012_cps3",
             "description": "Supported extensions: zip.",
-            "is_retroachievements_compatible": true,
+            "is_retroachievements_compatible": false,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"fbalpha2012_cps3\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"fbalpha2012_cps3\""
                 },
                 "windows": {
                     "executable": "retroarch.exe",
@@ -158,5 +163,20 @@
                 }
             }
         }
-    ]
+    ],
+    "neosync": {
+        "sync": true,
+        "android_sync_folder": [
+            "{SYNC_DIR}"
+        ],
+        "windows_sync_folder": [
+            "{SYNC_DIR}"
+        ],
+        "linux_sync_folder": [
+            "{SYNC_DIR}"
+        ],
+        "macos_sync_folder": [
+            "{SYNC_DIR}"
+        ]
+    }
 }

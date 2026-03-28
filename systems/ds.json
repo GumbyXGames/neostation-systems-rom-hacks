@@ -2,6 +2,7 @@
     "system": {
         "id": "ds",
         "name": "Nintendo DS",
+        "short_name": "DS",
         "details": {
             "manufacturer": "Nintendo",
             "release_date": "2004-11-21",
@@ -15,6 +16,10 @@
             "nds",
             "ds",
             "Nintendo DS"
+        ],
+        "colors": [
+            "#B0BEC5",
+            "#ECEFF1"
         ],
         "extensions": [
             "nds",
@@ -33,7 +38,7 @@
             "description": "MelonDS core for RetroArch.",
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"melonds\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"melonds\""
                 },
                 "windows": {
                     "executable": "retroarch.exe",
@@ -56,7 +61,7 @@
             "description": "MelonDS core for RetroArch with dual screen support.",
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"melondsds\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"melondsds\""
                 },
                 "windows": {
                     "executable": "retroarch.exe",
@@ -79,7 +84,7 @@
             "description": "DeSmuME core for RetroArch.",
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"desmume\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"desmume\""
                 },
                 "windows": {
                     "executable": "retroarch.exe",
@@ -102,7 +107,7 @@
             "description": "MelonDS core for RetroArch 64.",
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"melonds\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"melonds\""
                 }
             }
         },
@@ -113,7 +118,7 @@
             "description": "MelonDS core for RetroArch 64 with dual screen support.",
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"melondsds\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"melondsds\""
                 }
             }
         },
@@ -124,7 +129,7 @@
             "description": "MelonDS core for RetroArch 32.",
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"melonds\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"melonds\""
                 }
             }
         },
@@ -135,7 +140,7 @@
             "description": "MelonDS core for RetroArch 32 with dual screen support.",
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"melondsds\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"melondsds\""
                 }
             }
         },
@@ -146,7 +151,7 @@
             "description": "DeSmuME core for RetroArch 32.",
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"desmume\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"desmume\""
                 }
             }
         },
@@ -164,7 +169,7 @@
         {
             "name": "Standalone MelonDS",
             "unique_id": "ds.standalone.melonds",
-            "is_retroachievements_compatible": false,
+            "is_retroachievements_compatible": true,
             "description": "Free and open-source Nintendo DS emulator.",
             "platforms": {
                 "android": {
@@ -217,5 +222,20 @@
                 }
             }
         }
-    ]
+    ],
+    "neosync": {
+        "sync": true,
+        "android_sync_folder": [
+            "{SYNC_DIR}"
+        ],
+        "windows_sync_folder": [
+            "{SYNC_DIR}"
+        ],
+        "linux_sync_folder": [
+            "{SYNC_DIR}"
+        ],
+        "macos_sync_folder": [
+            "{SYNC_DIR}"
+        ]
+    }
 }

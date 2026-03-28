@@ -2,6 +2,7 @@
     "system": {
         "id": "wii",
         "name": "Nintendo Wii",
+        "short_name": "Wii",
         "details": {
             "manufacturer": "Nintendo",
             "release_date": "2006-11-19",
@@ -9,11 +10,15 @@
         },
         "ids": {
             "screenscraper": 16,
-            "retroachievements": 0
+            "retroachievements": null
         },
         "folders": [
             "wii",
             "Nintendo Wii"
+        ],
+        "colors": [
+            "#f5f5f5",
+            "#039be5"
         ],
         "extensions": [
             "ciso",
@@ -36,7 +41,7 @@
             "name": "Standalone Dolphin Handheld",
             "unique_id": "wii.org.dolphinemu.handheld",
             "description": "Supported extensions: ciso, dff, dol, elf, gcm, gcz, iso, tgc, wad, wbfs, rvz, m3u.",
-            "is_retroachievements_compatible": true,
+            "is_retroachievements_compatible": false,
             "platforms": {
                 "android": {
                     "launch_arguments": "-n org.dolphinemu.handheld/org.dolphinemu.dolphinemu.ui.main.MainActivity -a android.intent.action.VIEW -d \"{file.uri}\" --activity-clear-task --activity-clear-top --activity-no-history"
@@ -100,7 +105,7 @@
             }
         },
         {
-            "name": "Dolphin Ishiiruka",
+            "name": "StandaloneDolphin Ishiiruka",
             "unique_id": "wii.org.dolphin.ishiirukadark",
             "description": "Supported extensions: ciso, dff, dol, elf, gcm, gcz, iso, tgc, wad, wbfs, rvz.",
             "is_retroachievements_compatible": false,
@@ -114,10 +119,10 @@
             "name": "RetroArch64 Dolphin",
             "unique_id": "wii.ra64.dolphin",
             "description": "Supported extensions: ciso, dff, dol, elf, gcm, gcz, iso, m3u, rvz, tgc, wad, wbfs, wia",
-            "is_retroachievements_compatible": true,
+            "is_retroachievements_compatible": false,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"dolphin\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"dolphin\""
                 }
             }
         },
@@ -126,10 +131,10 @@
             "default": true,
             "unique_id": "wii.ra.dolphin",
             "description": "Supported extensions: ciso, dff, dol, elf, gcm, gcz, iso, m3u, rvz, tgc, wad, wbfs, wia",
-            "is_retroachievements_compatible": true,
+            "is_retroachievements_compatible": false,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"dolphin\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"dolphin\""
                 },
                 "windows": {
                     "executable": "retroarch.exe",
@@ -145,5 +150,20 @@
                 }
             }
         }
-    ]
+    ],
+    "neosync": {
+        "sync": true,
+        "android_sync_folder": [
+            "{SYNC_DIR}"
+        ],
+        "windows_sync_folder": [
+            "{SYNC_DIR}"
+        ],
+        "linux_sync_folder": [
+            "{SYNC_DIR}"
+        ],
+        "macos_sync_folder": [
+            "{SYNC_DIR}"
+        ]
+    }
 }

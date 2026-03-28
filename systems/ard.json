@@ -2,6 +2,7 @@
     "system": {
         "id": "ard",
         "name": "Arduboy",
+        "short_name": "ARD",
         "details": {
             "manufacturer": "Kevin Bates",
             "release_date": "2014-01-01",
@@ -15,6 +16,10 @@
             "ard",
             "arduboy"
         ],
+        "colors": [
+            "#424242",
+            "#FAFAFA"
+        ],
         "extensions": [
             "hex",
             "arduboy"
@@ -23,12 +28,12 @@
     "emulators": [
         {
             "name": "RetroArch Arduous",
-            "unique_id": "arduboy.ra.arduous",
+            "unique_id": "ard.ra.arduous",
             "description": "Supported extensions: hex.",
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"arduous\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"arduous\""
                 },
                 "windows": {
                     "executable": "retroarch.exe",
@@ -47,12 +52,12 @@
         {
             "name": "RetroArch Ardens",
             "default": true,
-            "unique_id": "arduboy.ra.ardens",
+            "unique_id": "ard.ra.ardens",
             "description": "Supported extensions: hex, arduboy.",
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"ardens\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"ardens\""
                 },
                 "windows": {
                     "executable": "retroarch.exe",
@@ -70,47 +75,62 @@
         },
         {
             "name": "RetroArch64 Arduous",
-            "unique_id": "arduboy.ra64.arduous",
+            "unique_id": "ard.ra64.arduous",
             "description": "Supported extensions: hex.",
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"arduous\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"arduous\""
                 }
             }
         },
         {
             "name": "RetroArch64 Ardens",
-            "unique_id": "arduboy.ra64.ardens",
+            "unique_id": "ard.ra64.ardens",
             "description": "Supported extensions: hex, arduboy.",
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"ardens\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"ardens\""
                 }
             }
         },
         {
             "name": "RetroArch32 Arduous",
-            "unique_id": "arduboy.ra32.arduous",
+            "unique_id": "ard.ra32.arduous",
             "description": "Supported extensions: hex.",
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"arduous\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"arduous\""
                 }
             }
         },
         {
             "name": "RetroArch32 Ardens",
-            "unique_id": "arduboy.ra32.ardens",
+            "unique_id": "ard.ra32.ardens",
             "description": "Supported extensions: hex, arduboy.",
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"ardens\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"ardens\""
                 }
             }
         }
-    ]
+    ],
+    "neosync": {
+        "sync": true,
+        "android_sync_folder": [
+            "{SYNC_DIR}"
+        ],
+        "windows_sync_folder": [
+            "{SYNC_DIR}"
+        ],
+        "linux_sync_folder": [
+            "{SYNC_DIR}"
+        ],
+        "macos_sync_folder": [
+            "{SYNC_DIR}"
+        ]
+    }
 }

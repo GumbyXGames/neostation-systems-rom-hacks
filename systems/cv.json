@@ -2,6 +2,7 @@
     "system": {
         "id": "cv",
         "name": "ColecoVision",
+        "short_name": "CV",
         "details": {
             "manufacturer": "Coleco",
             "release_date": "1982-08-01",
@@ -15,6 +16,10 @@
             "cv",
             "coleco",
             "ColecoVision"
+        ],
+        "colors": [
+            "#424242",
+            "#FAFAFA"
         ],
         "extensions": [
             "cas",
@@ -36,57 +41,57 @@
     "emulators": [
         {
             "name": "RetroArch64 BlueMSX",
-            "unique_id": "coleco.ra64.bluemsx",
+            "unique_id": "cv.ra64.bluemsx",
             "description": "Supported extensions: cas, col, dsk, m3u, mx1, mx2, ri, rom, sc, sg, zip, 7z.",
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"bluemsx\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"bluemsx\""
                 }
             }
         },
         {
             "name": "RetroArch64 GearColeco",
-            "unique_id": "coleco.ra64.gearcoleco",
+            "unique_id": "cv.ra64.gearcoleco",
             "description": "Supported extensions: col, cv, bin, rom, zip",
             "is_retroachievements_compatible": false,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"gearcoleco\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"gearcoleco\""
                 }
             }
         },
         {
             "name": "RetroArch32 BlueMSX",
-            "unique_id": "coleco.ra32.bluemsx",
+            "unique_id": "cv.ra32.bluemsx",
             "description": "Supported extensions: cas, col, dsk, m3u, mx1, mx2, ri, rom, sc, sg, zip, 7z.",
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"bluemsx\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"bluemsx\""
                 }
             }
         },
         {
             "name": "RetroArch32 GearColeco",
-            "unique_id": "coleco.ra32.gearcoleco",
+            "unique_id": "cv.ra32.gearcoleco",
             "description": "Supported extensions: col, cv, bin, rom, zip",
             "is_retroachievements_compatible": false,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"gearcoleco\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"gearcoleco\""
                 }
             }
         },
         {
             "name": "RetroArch BlueMSX",
             "default": true,
-            "unique_id": "coleco.ra.bluemsx",
+            "unique_id": "cv.ra.bluemsx",
             "description": "Supported extensions: cas, col, dsk, m3u, mx1, mx2, ri, rom, sc, sg, zip, 7z.",
             "is_retroachievements_compatible": true,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"bluemsx\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"bluemsx\""
                 },
                 "windows": {
                     "executable": "retroarch.exe",
@@ -104,12 +109,12 @@
         },
         {
             "name": "RetroArch GearColeco",
-            "unique_id": "coleco.ra.gearcoleco",
+            "unique_id": "cv.ra.gearcoleco",
             "description": "Supported extensions: col, cv, bin, rom, zip",
             "is_retroachievements_compatible": false,
             "platforms": {
                 "android": {
-                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"gearcoleco\" --es CONFIGFILE \"/storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg\""
+                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"gearcoleco\""
                 },
                 "windows": {
                     "executable": "retroarch.exe",
@@ -126,16 +131,76 @@
             }
         },
         {
-            "name": "Standalone RAMEKA",
-            "unique_id": "coleco.ramek",
+            "name": "Standalone RAMeka",
+            "unique_id": "cv.ramek",
             "description": "Supported extensions: col, cv, bin, rom, zip",
-            "is_retroachievements_compatible": false,
+            "is_retroachievements_compatible": true,
             "platforms": {
                 "windows": {
                     "executable": "RAmeka.exe",
                     "args": "\"{file.path}\""
                 }
             }
+        },
+        {
+            "name": "RetroArch FBNeo",
+            "unique_id": "cv.ra.fbneo",
+            "description": "Supported extensions: 7z, ccd, cue, zip.",
+            "is_retroachievements_compatible": false,
+            "platforms": {
+                "android": {
+                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"fbneo\""
+                },
+                "windows": {
+                    "executable": "retroarch.exe",
+                    "args": "-L fbneo_libretro.dll \"{file.path}\""
+                },
+                "linux": {
+                    "executable": "retroarch",
+                    "args": "-L fbneo_libretro.so \"{file.path}\""
+                },
+                "macos": {
+                    "executable": "RetroArch.App",
+                    "args": "-L fbneo_libretro.dylib \"{file.path}\""
+                }
+            }
+        },
+        {
+            "name": "RetroArch64 FBNeo",
+            "unique_id": "cv.ra64.fbneo",
+            "description": "Supported extensions: 7z, ccd, cue, zip.",
+            "is_retroachievements_compatible": false,
+            "platforms": {
+                "android": {
+                    "launch_arguments": "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"fbneo\""
+                }
+            }
+        },
+        {
+            "name": "RetroArch32 FBNeo",
+            "unique_id": "cv.ra32.fbneo",
+            "description": "Supported extensions: 7z, ccd, cue, zip.",
+            "is_retroachievements_compatible": false,
+            "platforms": {
+                "android": {
+                    "launch_arguments": "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"fbneo\""
+                }
+            }
         }
-    ]
+    ],
+    "neosync": {
+        "sync": true,
+        "android_sync_folder": [
+            "{SYNC_DIR}"
+        ],
+        "windows_sync_folder": [
+            "{SYNC_DIR}"
+        ],
+        "linux_sync_folder": [
+            "{SYNC_DIR}"
+        ],
+        "macos_sync_folder": [
+            "{SYNC_DIR}"
+        ]
+    }
 }

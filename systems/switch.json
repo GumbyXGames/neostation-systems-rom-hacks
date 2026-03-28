@@ -2,6 +2,7 @@
     "system": {
         "id": "switch",
         "name": "Nintendo Switch",
+        "short_name": "Switch",
         "details": {
             "manufacturer": "Nintendo",
             "release_date": "2017-03-03",
@@ -9,11 +10,15 @@
         },
         "ids": {
             "screenscraper": 225,
-            "retroachievements": 0
+            "retroachievements": null
         },
         "folders": [
             "switch",
             "Nintendo Switch"
+        ],
+        "colors": [
+            "#e57373",
+            "#64b5f6"
         ],
         "extensions": [
             "nca",
@@ -36,17 +41,6 @@
             }
         },
         {
-            "name": "Standalone Strato",
-            "unique_id": "switch.org.stratoemu.strato",
-            "description": "Supported extensions: nro, nso, nca, xci, nsp.",
-            "is_retroachievements_compatible": false,
-            "platforms": {
-                "android": {
-                    "launch_arguments": "-n org.stratoemu.strato/org.stratoemu.strato.EmulationActivity -a android.intent.action.VIEW -d {file.uri}"
-                }
-            }
-        },
-        {
             "name": "Standalone Eden",
             "default": true,
             "unique_id": "switch.dev.eden.eden_emulator",
@@ -62,10 +56,6 @@
                 },
                 "linux": {
                     "executable": "eden",
-                    "args": "{file.path}"
-                },
-                "macos": {
-                    "executable": "eden.app",
                     "args": "{file.path}"
                 }
             }
@@ -109,9 +99,6 @@
             "description": "Supported extensions: nro, nso, nca, xci, nsp.",
             "is_retroachievements_compatible": false,
             "platforms": {
-                "android": {
-                    "launch_arguments": "-n org.yuzu.yuzu_emu/org.yuzu.yuzu_emu.activities.EmulationActivity -a android.nfc.action.TECH_DISCOVERED -d {file.uri}"
-                },
                 "windows": {
                     "executable": "yuzu.exe",
                     "args": "{file.path}"
@@ -119,21 +106,6 @@
                 "linux": {
                     "executable": "yuzu",
                     "args": "{file.path}"
-                },
-                "macos": {
-                    "executable": "yuzu.app",
-                    "args": "{file.path}"
-                }
-            }
-        },
-        {
-            "name": "Standalone Yuzu (early access)",
-            "unique_id": "switch.org.yuzu.yuzu_emu.ea",
-            "description": "Supported extensions: nro, nso, nca, xci, nsp.",
-            "is_retroachievements_compatible": false,
-            "platforms": {
-                "android": {
-                    "launch_arguments": "-n org.yuzu.yuzu_emu.ea/org.yuzu.yuzu_emu.activities.EmulationActivity -a android.nfc.action.TECH_DISCOVERED -d {file.uri}"
                 }
             }
         },
@@ -186,10 +158,6 @@
                 "linux": {
                     "executable": "citron",
                     "args": "{file.path}"
-                },
-                "macos": {
-                    "executable": "citron.app",
-                    "args": "{file.path}"
                 }
             }
         },
@@ -215,5 +183,20 @@
                 }
             }
         }
-    ]
+    ],
+    "neosync": {
+        "sync": true,
+        "android_sync_folder": [
+            "{SWITCH_NAND}"
+        ],
+        "windows_sync_folder": [
+            "{SWITCH_NAND}"
+        ],
+        "linux_sync_folder": [
+            "{SWITCH_NAND}"
+        ],
+        "macos_sync_folder": [
+            "{SWITCH_NAND}"
+        ]
+    }
 }
