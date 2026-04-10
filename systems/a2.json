@@ -29,14 +29,45 @@
             "woz",
             "nib",
             "2mg",
+            "2img",
+            "iie",
+            "hdv",
+            "yaml",
+            "m3u",
             "cmd",
-            "bin"
+            "bin",
+            "zip",
+            "apl",
+            "gz"
         ]
     },
     "emulators": [
         {
-            "name": "RetroArch MAME/MESS",
+            "name": "RetroArch AppleWin",
             "default": true,
+            "unique_id": "a2.ra.applewin",
+            "is_retroachievements_compatible": false,
+            "description": "Supported extensions: cmd.",
+            "platforms": {
+                "android": {
+                    "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture --es ROM \"{file.path}\" --es LIBRETRO \"applewin\""
+                },
+                "windows": {
+                    "executable": "retroarch.exe",
+                    "args": "-L applewin_libretro.dll \"{file.path}\""
+                },
+                "linux": {
+                    "executable": "retroarch",
+                    "args": "-L applewin_libretro.so \"{file.path}\""
+                },
+                "macos": {
+                    "executable": "RetroArch.App",
+                    "args": "-L applewin_libretro.dylib \"{file.path}\""
+                }
+            }
+        },
+        {
+            "name": "RetroArch MAME/MESS",
             "unique_id": "a2.ra.mess",
             "is_retroachievements_compatible": false,
             "description": "Supported extensions: cmd.",

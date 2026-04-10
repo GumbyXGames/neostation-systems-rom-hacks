@@ -13,7 +13,10 @@
             "retroachievements": null
         },
         "folders": [
-            "cdi"
+            "cdi",
+            "cdimono1",
+            "philipscdi",
+            "Philips CD-i"
         ],
         "colors": [
             "#B0BEC5",
@@ -56,6 +59,18 @@
             "platforms": {
                 "android": {
                     "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture -e ROM {file.path}  -e LIBRETRO same_cdi  -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg"
+                },
+                "windows": {
+                    "executable": "retroarch.exe",
+                    "args": "-L same_cdi_libretro.dll \"{file.path}\""
+                },
+                "linux": {
+                    "executable": "retroarch",
+                    "args": "-L same_cdi_libretro.so \"{file.path}\""
+                },
+                "macos": {
+                    "executable": "RetroArch.App",
+                    "args": "-L same_cdi_libretro.dylib \"{file.path}\""
                 }
             }
         }

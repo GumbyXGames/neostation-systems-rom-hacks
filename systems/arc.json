@@ -14,7 +14,8 @@
         },
         "folders": [
             "arc",
-            "arcade"
+            "arcade",
+            "consolearcade"
         ],
         "colors": [
             "#EF5350",

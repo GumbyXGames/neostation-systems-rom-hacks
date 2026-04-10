@@ -30,7 +30,9 @@
             "ri",
             "rom",
             "sc",
-            "sg"
+            "sg",
+            "zip",
+            "7z"
         ]
     },
     "emulators": [

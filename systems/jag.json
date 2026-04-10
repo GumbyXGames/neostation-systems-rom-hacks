@@ -15,6 +15,7 @@
         "folders": [
             "jag",
             "jaguar",
+            "atarijaguar",
             "Atari Jaguar"
         ],
         "colors": [
@@ -42,6 +43,22 @@
             "platforms": {
                 "android": {
                     "launch_arguments": "-n ru.vastness.altmer.iratajaguar/ru.vastness.altmer.iratajaguar.MainActivity -e rom {file.path} --activity-clear-task --activity-clear-top --activity-no-history"
+                }
+            }
+        },
+        {
+            "name": "Standalone BigPEmu",
+            "unique_id": "jag.jaguar.bigpe.bigpemu",
+            "description": "Supported extensions: j64, jag, rom, abs, cof, bin, prg, zip, 7z.",
+            "is_retroachievements_compatible": false,
+            "platforms": {
+                "windows": {
+                    "executable": "bigpemu.exe",
+                    "args": "\"{file.path}\""
+                },
+                "linux": {
+                    "executable": "bigpemu",
+                    "args": "\"{file.path}\""
                 }
             }
         },

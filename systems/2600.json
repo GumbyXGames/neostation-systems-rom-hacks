@@ -164,6 +164,26 @@
                     "launch_arguments": "-n com.androidemu.atari/com.androidemu.atari.EmulatorActivity -a android.intent.action.VIEW -d \"{file.path}\""
                 }
             }
+        },
+        {
+            "name": "Standalone Stella",
+            "unique_id": "2600.com.stella.emulator",
+            "is_retroachievements_compatible": false,
+            "description": "Supported extensions: a26, bin, zip.",
+            "platforms": {
+                "windows": {
+                    "executable": "stella.exe",
+                    "args": "{file.path}"
+                },
+                "linux": {
+                    "executable": "stella",
+                    "args": "{file.path}"
+                },
+                "macos": {
+                    "executable": "stella",
+                    "args": "{file.path}"
+                }
+            }
         }
     ],
     "neosync": {
