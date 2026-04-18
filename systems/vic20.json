@@ -91,6 +91,18 @@
             "platforms": {
                 "android": {
                     "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture  -e ROM {file.path}  -e LIBRETRO vice_xvic  -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg"
+                },
+                "windows": {
+                    "executable": "retroarch.exe",
+                    "args": "-L vice_xvic_libretro.dll \"{file.path}\""
+                },
+                "linux": {
+                    "executable": "retroarch",
+                    "args": "-L vice_xvic_libretro.so \"{file.path}\""
+                },
+                "macos": {
+                    "executable": "RetroArch.App",
+                    "args": "-L vice_xvic_libretro.dylib \"{file.path}\""
                 }
             }
         }

@@ -59,6 +59,18 @@
             "platforms": {
                 "android": {
                     "launch_arguments": "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture  -e ROM {file.path}  -e LIBRETRO 81  -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg"
+                },
+                "windows": {
+                    "executable": "retroarch.exe",
+                    "args": "-L 81_libretro.dll \"{file.path}\""
+                },
+                "linux": {
+                    "executable": "retroarch",
+                    "args": "-L 81_libretro.so \"{file.path}\""
+                },
+                "macos": {
+                    "executable": "RetroArch.App",
+                    "args": "-L 81_libretro.dylib \"{file.path}\""
                 }
             }
         }

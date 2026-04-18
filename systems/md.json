@@ -14,7 +14,10 @@
         },
         "folders": [
             "md",
-            "megadrive"
+            "megadrive",
+            "Sega Mega Drive",
+            "Mega Drive",
+            "Sega MD"
         ],
         "colors": [
             "#263238",

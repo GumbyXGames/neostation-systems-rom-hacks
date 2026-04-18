@@ -14,7 +14,9 @@
         },
         "folders": [
             "gb",
-            "Game Boy"
+            "Game Boy",
+            "Nintendo Game Boy",
+            "gameboy"
         ],
         "colors": [
             "#90A4AE",
