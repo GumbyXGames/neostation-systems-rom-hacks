@@ -15,7 +15,13 @@
         "folders": [
             "fds",
             "Famicom Disk System",
-            "Disk System"
+            "Disk System",
+            "Family Computer Disk",
+            "Family Computer Disk System",
+            "Famicom Disk",
+            "Nintendo Family Computer Disk",
+            "Nintendo FCD",
+            "Nintendo Family Computer Disk System"
         ],
         "colors": [
             "#EF5350",

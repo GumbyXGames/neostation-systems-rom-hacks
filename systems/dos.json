@@ -14,7 +14,9 @@
         },
         "folders": [
             "dos",
-            "msdos"
+            "msdos",
+            "MS-DOS",
+            "MS DOS"
         ],
         "colors": [
             "#F5F5DC",
