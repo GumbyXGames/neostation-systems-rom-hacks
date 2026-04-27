@@ -1,12 +1,12 @@
 {
   "system": {
-    "id": "scd",
-    "name": "Sega CD",
-    "short_name": "SCD",
+    "id": "mcd",
+    "name": "Sega Mega-CD",
+    "short_name": "MCD",
     "details": {
       "manufacturer": "Sega",
       "release_date": "1991-12-12",
-      "description": "Sega's CD-ROM add-on for the Genesis with enhanced sound and video.",
+      "description": "Sega's CD-ROM add-on for the Mega Drive with enhanced audio and FMV.",
       "type": "console"
     },
     "ids": {
@@ -14,9 +14,9 @@
       "retroachievements": 9
     },
     "folders": [
-      "scd",
-      "segacd",
-      "Sega CD"
+      "mcd",
+      "megacd",
+      "Mega CD"
     ],
     "colors": [
       "#424242",
@@ -47,7 +47,7 @@
   "emulators": [
     {
       "name": "Standalone Md.emu",
-      "unique_id": "scd.com.explusalpha.MdEmu",
+      "unique_id": "mcd.com.explusalpha.MdEmu",
       "description": "Support extensions: 32x, 68k, bin, bms, chd, cue, gen, gg, iso, m3u, md, mdx, pco, sg, sgd, smd, sms.",
       "is_retroachievements_compatible": false,
       "platforms": {
@@ -58,7 +58,7 @@
     },
     {
       "name": "RetroArch64 Genesis Plus GX",
-      "unique_id": "scd.ra64.genesis_plus_gx",
+      "unique_id": "mcd.ra64.genesis_plus_gx",
       "description": "Supported extensions: 68k, bin, chd, cue, gen, gg, iso, md, mdx, sg, smd, sms, zip, 7z.",
       "is_retroachievements_compatible": true,
       "platforms": {
@@ -69,7 +69,7 @@
     },
     {
       "name": "RetroArch64 Genesis Plus GX Wide",
-      "unique_id": "scd.ra64.genesis_plus_gx_wide",
+      "unique_id": "mcd.ra64.genesis_plus_gx_wide",
       "description": "Supported extensions: 68k, bin, chd, cue, gen, gg, iso, md, mdx, sg, smd, sms, zip, 7z.",
       "is_retroachievements_compatible": false,
       "platforms": {
@@ -80,7 +80,7 @@
     },
     {
       "name": "RetroArch64 PicoDrive",
-      "unique_id": "scd.ra64.picodrive",
+      "unique_id": "mcd.ra64.picodrive",
       "description": "Supported extensions: 32x, 68k, bin, chd, cue, gen, gg, iso, m3u, md, pco, sgd, smd, sms, 7z, zip.",
       "is_retroachievements_compatible": true,
       "platforms": {
@@ -91,7 +91,7 @@
     },
     {
       "name": "RetroArch32 Genesis Plus GX",
-      "unique_id": "scd.ra32.genesis_plus_gx",
+      "unique_id": "mcd.ra32.genesis_plus_gx",
       "description": "Supported extensions: 68k, bin, chd, cue, gen, gg, iso, md, mdx, sg, smd, sms, zip, 7z.",
       "is_retroachievements_compatible": true,
       "platforms": {
@@ -102,7 +102,7 @@
     },
     {
       "name": "RetroArch32 Genesis Plus GX Wide",
-      "unique_id": "scd.ra32.genesis_plus_gx_wide",
+      "unique_id": "mcd.ra32.genesis_plus_gx_wide",
       "description": "Supported extensions: 68k, bin, chd, cue, gen, gg, iso, md, mdx, sg, smd, sms, zip, 7z.",
       "is_retroachievements_compatible": false,
       "platforms": {
@@ -113,7 +113,7 @@
     },
     {
       "name": "RetroArch32 PicoDrive",
-      "unique_id": "scd.ra32.picodrive",
+      "unique_id": "mcd.ra32.picodrive",
       "description": "Supported extensions: 32x, 68k, bin, chd, cue, gen, gg, iso, m3u, md, pco, sgd, smd, sms, 7z, zip.",
       "is_retroachievements_compatible": true,
       "platforms": {
@@ -125,7 +125,7 @@
     {
       "name": "RetroArch Genesis Plus GX",
       "default": true,
-      "unique_id": "scd.ra.genesis_plus_gx",
+      "unique_id": "mcd.ra.genesis_plus_gx",
       "description": "Supported extensions: 68k, bin, chd, cue, gen, gg, iso, md, mdx, sg, smd, sms, zip, 7z.",
       "is_retroachievements_compatible": true,
       "platforms": {
@@ -148,7 +148,7 @@
     },
     {
       "name": "RetroArch Genesis Plus GX Wide",
-      "unique_id": "scd.ra.genesis_plus_gx_wide",
+      "unique_id": "mcd.ra.genesis_plus_gx_wide",
       "description": "Supported extensions: 68k, bin, chd, cue, gen, gg, iso, md, mdx, sg, smd, sms, zip, 7z.",
       "is_retroachievements_compatible": false,
       "platforms": {
@@ -171,7 +171,7 @@
     },
     {
       "name": "RetroArch PicoDrive",
-      "unique_id": "scd.ra.picodrive",
+      "unique_id": "mcd.ra.picodrive",
       "description": "Supported extensions: 32x, 68k, bin, chd, cue, gen, gg, iso, m3u, md, pco, sgd, smd, sms, 7z, zip.",
       "is_retroachievements_compatible": true,
       "platforms": {

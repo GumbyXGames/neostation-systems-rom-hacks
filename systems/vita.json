@@ -1,72 +1,73 @@
 {
-    "system": {
-        "id": "vita",
-        "name": "Sony PS Vita",
-        "short_name": "Vita",
-        "details": {
-            "manufacturer": "Sony",
-            "release_date": "2011-12-17",
-            "description": "The PlayStation Vita (PS Vita) is a handheld game console developed by Sony Computer Entertainment. It was first released in Japan in December 2011 and in North America and Europe in February 2012. It is the successor to the PlayStation Portable (PSP) and is capable of playing PS Vita games, as well as a selection of PSP and PlayStation Classics games."
-        },
-        "ids": {
-            "screenscraper": 62,
-            "retroachievements": null
-        },
-        "folders": [
-            "vita",
-            "psvita",
-            "ps vita"
-        ],
-        "colors": [
-            "#007ACC",
-            "#000000"
-        ],
-        "extensions": [
-            "psvita"
-        ]
+  "system": {
+    "id": "vita",
+    "name": "Sony PS Vita",
+    "short_name": "Vita",
+    "details": {
+      "manufacturer": "Sony",
+      "release_date": "2011-12-17",
+      "description": "Sony's powerful handheld with a 5-inch OLED touchscreen.",
+      "type": "handheld"
     },
-    "emulators": [
-        {
-            "name": "Standalone Vita3K",
-            "default": true,
-            "unique_id": "vita.vita3k",
-            "description": "Supported extensions: psvita.",
-            "is_retroachievements_compatible": false,
-            "platforms": {
-                "android": {
-                    "launch_arguments": "-n org.vita3k.emulator/org.vita3k.emulator.Emulator  --esa AppStartParameters -r,{tags.vita_game_id}"
-                },
-                "windows": {
-                    "executable": "vita3k.exe",
-                    "args": "--fullscreen -r {tags.vita_game_id}"
-                },
-                "linux": {
-                    "executable": "vita3k",
-                    "args": "--fullscreen -r {tags.vita_game_id}"
-                },
-                "macos": {
-                    "executable": "Vita3K.app",
-                    "args": "--fullscreen -r {tags.vita_game_id}"
-                }
-            }
-        },
-        {
-            "name": "Standalone Vita3K ZX",
-            "unique_id": "vita.vita3k.zx",
-            "description": "Supported extensions: dpt.",
-            "is_retroachievements_compatible": false,
-            "platforms": {
-                "android": {
-                    "launch_arguments": "-n org.vita3k.emulator.ikhoeyZX/org.vita3k.emulator.Emulator  --esa AppStartParameters -r,{tags.vita_game_id}"
-                }
-            }
-        }
+    "ids": {
+      "screenscraper": 62,
+      "retroachievements": null
+    },
+    "folders": [
+      "vita",
+      "psvita",
+      "ps vita"
     ],
-    "neosync": {
-        "sync": false,
-        "android_sync_folder": [],
-        "windows_sync_folder": [],
-        "linux_sync_folder": [],
-        "macos_sync_folder": []
+    "colors": [
+      "#007ACC",
+      "#000000"
+    ],
+    "extensions": [
+      "psvita"
+    ]
+  },
+  "emulators": [
+    {
+      "name": "Standalone Vita3K",
+      "default": true,
+      "unique_id": "vita.vita3k",
+      "description": "Supported extensions: psvita.",
+      "is_retroachievements_compatible": false,
+      "platforms": {
+        "android": {
+          "launch_arguments": "-n org.vita3k.emulator/org.vita3k.emulator.Emulator  --esa AppStartParameters -r,{tags.vita_game_id}"
+        },
+        "windows": {
+          "executable": "vita3k.exe",
+          "args": "--fullscreen -r {tags.vita_game_id}"
+        },
+        "linux": {
+          "executable": "vita3k",
+          "args": "--fullscreen -r {tags.vita_game_id}"
+        },
+        "macos": {
+          "executable": "Vita3K.app",
+          "args": "--fullscreen -r {tags.vita_game_id}"
+        }
+      }
+    },
+    {
+      "name": "Standalone Vita3K ZX",
+      "unique_id": "vita.vita3k.zx",
+      "description": "Supported extensions: dpt.",
+      "is_retroachievements_compatible": false,
+      "platforms": {
+        "android": {
+          "launch_arguments": "-n org.vita3k.emulator.ikhoeyZX/org.vita3k.emulator.Emulator  --esa AppStartParameters -r,{tags.vita_game_id}"
+        }
+      }
     }
+  ],
+  "neosync": {
+    "sync": false,
+    "android_sync_folder": [],
+    "windows_sync_folder": [],
+    "linux_sync_folder": [],
+    "macos_sync_folder": []
+  }
 }

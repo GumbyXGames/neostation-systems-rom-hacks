@@ -1,73 +1,74 @@
 {
-    "system": {
-        "id": "xbox360",
-        "name": "Microsoft - XBox 360",
-        "short_name": "XB360",
-        "details": {
-            "manufacturer": "Microsoft",
-            "release_date": "2005-11-22",
-            "description": "The Xbox 360 is a home video game console developed by Microsoft. It was first released as the Xbox 2 in North America on November 22, 2005, followed by Europe and Japan in December 2005. It is the successor to the original Xbox and a competitor to Sony's PlayStation 3 and Nintendo's Wii."
-        },
-        "ids": {
-            "screenscraper": 33,
-            "retroachievements": null
-        },
-        "folders": [
-            "xbox360",
-            "Microsoft Xbox 360",
-            "Xbox 360",
-            "360"
-        ],
-        "colors": [
-            "#91C300",
-            "#FFFFFF"
-        ],
-        "extensions": [
-            "iso"
-        ]
+  "system": {
+    "id": "xbox360",
+    "name": "Microsoft - XBox 360",
+    "short_name": "XB360",
+    "details": {
+      "manufacturer": "Microsoft",
+      "release_date": "2005-11-22",
+      "description": "Microsoft's HD console with Xbox Live and a vast multimedia ecosystem.",
+      "type": "console"
     },
-    "emulators": [
-        {
-            "name": "AX360e",
-            "unique_id": "xbox360.aenu.ax360e",
-            "description": "Supported extensions: iso.",
-            "is_retroachievements_compatible": false,
-            "platforms": {
-                "android": {
-                    "launch_arguments": "-n aenu.ax360e/aenu.ax360e.EmulatorActivity  -a aenu.intent.action.AX360E  -e game_uri {file.uri}"
-                }
-            }
-        },
-        {
-            "name": "AX360e (Free)",
-            "default": true,
-            "unique_id": "xbox360.aenu.ax360e.free",
-            "description": "Supported extensions: iso.",
-            "is_retroachievements_compatible": false,
-            "platforms": {
-                "android": {
-                    "launch_arguments": "-n aenu.ax360e.free/aenu.ax360e.EmulatorActivity  -a aenu.intent.action.AX360E  -e game_uri {file.uri}"
-                }
-            }
-        },
-        {
-            "name": "Xenia",
-            "unique_id": "xbox360.xenia",
-            "description": "Supported extensions: iso.",
-            "is_retroachievements_compatible": false,
-            "platforms": {
-                "windows": {
-                    "executable": "Xenia.exe",
-                    "args": "{file.path}"
-                }
-            }
-        }
+    "ids": {
+      "screenscraper": 33,
+      "retroachievements": null
+    },
+    "folders": [
+      "xbox360",
+      "Microsoft Xbox 360",
+      "Xbox 360",
+      "360"
     ],
-    "neosync": {
-        "sync": false,
-        "android_sync_folder": [],
-        "windows_sync_folder": [],
-        "linux_sync_folder": [],
-        "macos_sync_folder": []
+    "colors": [
+      "#91C300",
+      "#FFFFFF"
+    ],
+    "extensions": [
+      "iso"
+    ]
+  },
+  "emulators": [
+    {
+      "name": "AX360e",
+      "unique_id": "xbox360.aenu.ax360e",
+      "description": "Supported extensions: iso.",
+      "is_retroachievements_compatible": false,
+      "platforms": {
+        "android": {
+          "launch_arguments": "-n aenu.ax360e/aenu.ax360e.EmulatorActivity  -a aenu.intent.action.AX360E  -e game_uri {file.uri}"
+        }
+      }
+    },
+    {
+      "name": "AX360e (Free)",
+      "default": true,
+      "unique_id": "xbox360.aenu.ax360e.free",
+      "description": "Supported extensions: iso.",
+      "is_retroachievements_compatible": false,
+      "platforms": {
+        "android": {
+          "launch_arguments": "-n aenu.ax360e.free/aenu.ax360e.EmulatorActivity  -a aenu.intent.action.AX360E  -e game_uri {file.uri}"
+        }
+      }
+    },
+    {
+      "name": "Xenia",
+      "unique_id": "xbox360.xenia",
+      "description": "Supported extensions: iso.",
+      "is_retroachievements_compatible": false,
+      "platforms": {
+        "windows": {
+          "executable": "Xenia.exe",
+          "args": "{file.path}"
+        }
+      }
     }
+  ],
+  "neosync": {
+    "sync": false,
+    "android_sync_folder": [],
+    "windows_sync_folder": [],
+    "linux_sync_folder": [],
+    "macos_sync_folder": []
+  }
 }
