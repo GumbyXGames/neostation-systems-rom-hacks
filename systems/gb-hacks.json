@@ -1,6 +1,6 @@
 {
   "system": {
-    "id": "gbh",
+    "id": "gb-hacks",
     "name": "Game Boy Hacks",
     "short_name": "GBH",
     "details": {
@@ -15,7 +15,9 @@
     },
     "folders": [
       "gbh",
-      "gameboyh"
+      "Game Boy Hacks",
+      "Nintendo Game Boy Hacks",
+      "gameboy-hacks"
     ],
     "colors": [
       "#90A4AE",
