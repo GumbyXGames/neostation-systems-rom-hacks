@@ -1,6 +1,6 @@
 {
   "system": {
-    "id": "gbch",
+    "id": "gbc-hacks",
     "name": "Game Boy Color Hacks",
     "short_name": "GBCH",
     "details": {
@@ -14,7 +14,10 @@
       "retroachievements": 6
     },
     "folders": [
-      "gbch"
+      "gbah",
+      "gbc-hacks",
+      "Game Boy Color Hacks",
+      "Nintendo Game Boy Color Hacks"
     ],
     "colors": [
       "#CE93D8",
