@@ -1,7 +1,7 @@
 {
   "system": {
-    "id": "ggh,
-    "name": "Sega Game Gear",
+    "id": "gg-hacks",
+    "name": "Sega Game Gear Hacks",
     "short_name": "GGH",
     "details": {
       "manufacturer": "Sega",
@@ -15,7 +15,9 @@
     },
     "folders": [
       "ggh",
-      "gamegearh"
+      "gg-hacks",
+      "gamegear-hacks",
+      "Sega Game Gear Hacks"
     ],
     "colors": [
       "#37474F",
