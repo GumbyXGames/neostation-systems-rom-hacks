@@ -1,6 +1,6 @@
 {
   "system": {
-    "id": "gbah",
+    "id": "gba-hacks",
     "name": "Game Boy Advance Hacks",
     "short_name": "GBAH",
     "details": {
@@ -14,7 +14,8 @@
       "retroachievements": 5
     },
     "folders": [
-      "gbah"
+      "gbah",
+      "gba-hacks"
     ],
     "colors": [
       "#5e35b1",
