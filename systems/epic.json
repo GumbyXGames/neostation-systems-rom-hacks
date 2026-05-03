@@ -37,7 +37,7 @@
       "description": "Supported extensions: epic",
       "platforms": {
         "android": {
-          "launch_arguments": "-a app.gamenative.LAUNCH_GAME -n app.gamenative/.MainActivity --ei app_id {tags.steamappid} --activity-clear-task --activity-clear-top"
+          "launch_arguments": "-a app.gamenative.LAUNCH_GAME -n app.gamenative/.MainActivity --ei app_id \"{tags.steamappid}\" --activity-clear-task --activity-clear-top"
         }
       }
     }
