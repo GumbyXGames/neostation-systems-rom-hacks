@@ -1,6 +1,6 @@
 {
   "system": {
-    "id": "snesh",
+    "id": "snes-hacks",
     "name": "Super Nintendo Entertainment System Hacks",
     "short_name": "SNESH",
     "details": {
@@ -15,7 +15,11 @@
     },
     "folders": [
       "snesh",
-      "snesnah"
+      "snes-hacks",
+      "snesnah",
+      "snesna-hacks",
+      "Super Nintendo Hacks",
+      "Super Nintendo Entertainment System Hacks"
     ],
     "colors": [
       "#d1d5db",
