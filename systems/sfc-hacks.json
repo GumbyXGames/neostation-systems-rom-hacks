@@ -1,6 +1,6 @@
 {
   "system": {
-    "id": "sfch",
+    "id": "sfc-hacks",
     "name": "Super Family Computer Hacks",
     "short_name": "SFCH",
     "details": {
@@ -14,7 +14,9 @@
       "retroachievements": 3
     },
     "folders": [
-      "sfch"
+      "sfch",
+      "shc-hacks",
+      "Super Famicom Hacks"
     ],
     "colors": [
       "#EEEEEE",
