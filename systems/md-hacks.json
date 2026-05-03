@@ -1,7 +1,7 @@
 {
   "system": {
-    "id": "mdh",
-    "name": "Sega Mega Drive" Hacks,
+    "id": "md-hacks",
+    "name": "Sega Mega Drive Hacks",
     "short_name": "MDH",
     "details": {
       "manufacturer": "Sega",
@@ -14,11 +14,13 @@
       "retroachievements": 1
     },
     "folders": [
-      "md",
-      "megadrive",
-      "Sega Mega Drive",
-      "Mega Drive",
-      "Sega MD"
+      "mdh",
+      "md-hacks",
+      "megadriveh",
+      "megadrive-hacks",
+      "Sega Mega Drive Hacks",
+      "Mega Drive Hacks",
+      "Sega MD Hacks"
     ],
     "colors": [
       "#263238",
