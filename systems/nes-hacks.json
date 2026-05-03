@@ -1,6 +1,6 @@
 {
   "system": {
-    "id": "nesh",
+    "id": "nes-hacks",
     "name": "Nintendo Entertainment System Hacks",
     "short_name": "NESH",
     "details": {
@@ -14,7 +14,10 @@
       "retroachievements": 7
     },
     "folders": [
-      "nesh"
+      "nesh",
+      "nes-hacks",
+      "Nintendo Entertainment System Hacks",
+      "Nintendo Hacks"
     ],
     "colors": [
       "#bdbdbd",
