@@ -37,7 +37,7 @@
       "description": "Supported extensions: gog",
       "platforms": {
         "android": {
-          "launch_arguments": "-a app.gamenative.LAUNCH_GAME\n -n app.gamenative/.MainActivity\n --ei app_id {tags.gog}\n --es game_source GOG\n --activity-clear-task --activity-clear-top"
+          "launch_arguments": "-a app.gamenative.LAUNCH_GAME-n app.gamenative/.MainActivity --ei app_id {tags.gog} --es game_source GOG --activity-clear-task --activity-clear-top"
         }
       }
     }
